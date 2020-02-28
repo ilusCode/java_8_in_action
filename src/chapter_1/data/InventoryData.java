@@ -7,6 +7,12 @@ import java.util.List;
 
 public class InventoryData {
 
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private InventoryData() {
+    }
+
     public static List<AppleModel> creaList() {
         List<AppleModel> inventory = new ArrayList<AppleModel>();
         return inventory;

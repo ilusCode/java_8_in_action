@@ -8,6 +8,11 @@ import java.io.FileFilter;
  *  Figure 1.4. Passing the method reference File::isHidden to the method listFiles
  */
 public class example2_Hidden {
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example2_Hidden() {
+    }
 
     private static void mostrarhidden(File[] hidden) {
         for (int i = 0; i <hidden.length ; i++) {
@@ -28,6 +33,9 @@ public class example2_Hidden {
         });
     }
 
+    /**
+     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     */
     public static void testExample2(){
         System.out.println("Example #2");
         File[] hidden = new File[0];

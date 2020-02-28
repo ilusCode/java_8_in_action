@@ -14,6 +14,12 @@ import static chapter_1.data.InventoryData.*;
 public class example3_Filter {
 
     /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example3_Filter() {
+    }
+
+    /**
      * Este metodo realiza un filtrado por medio del color verde
      * @param inv es una lista donde se encuentra los datos con los que se van a trabajar
      * @return una lista en donde se eñ bjeto en el campo color es verde
@@ -87,7 +93,9 @@ public class example3_Filter {
         return res;
     }
 
-
+    /**
+     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     */
     public static void testExample3(){
         System.out.println("Example #3");
         List<AppleModel> inv= creaList();

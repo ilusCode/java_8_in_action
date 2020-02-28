@@ -12,6 +12,13 @@ import static java.util.Comparator.comparing;
  *  El ejemplo actual fue extraido del libro Java 8 in action de la pagina 12
  */
 public class example1_Sort {
+
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example1_Sort() {
+    }
+
     /**
      * Este metodo sirve para optimizar el algoritmo de ordenamiento burbuja, en donde se le indica bajo que argumento va hacer el ordenamiento.
     * @param inventory es una lista de datos de una manzana.
@@ -45,6 +52,9 @@ public class example1_Sort {
 
     }
 
+    /**
+     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     */
     public static void testExample1(){
         System.out.println("Example #1");
         List<AppleModel> x= creaList();

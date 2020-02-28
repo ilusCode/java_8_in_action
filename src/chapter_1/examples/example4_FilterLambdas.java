@@ -11,6 +11,15 @@ import static chapter_1.examples.example3_Filter.filterApples;
  */
 public class example4_FilterLambdas {
 
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example4_FilterLambdas() {
+    }
+
+    /**
+     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     */
     public static void testExample4() {
         System.out.println("Example #4");
         List<AppleModel> inv = creaList();
