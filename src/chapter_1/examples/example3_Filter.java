@@ -21,12 +21,12 @@ public class example3_Filter {
 
     /**
      * Este metodo realiza un filtrado por medio del color verde
-     * @param inv es una lista donde se encuentra los datos con los que se van a trabajar
+     * @param list es una lista donde se encuentra los datos con los que se van a trabajar
      * @return una lista en donde se eñ bjeto en el campo color es verde
      */
-    public static List<AppleModel> filterApplesGreen(List<AppleModel> inv){
+    public static List<AppleModel> filterApplesGreen(List<AppleModel> list){
         List<AppleModel> res=new ArrayList();
-        for (AppleModel apple:inv){
+        for (AppleModel apple:list){
             if (apple.getColor().equals("Verde")){
                 res.add(apple);
             }

@@ -7,6 +7,10 @@ import java.util.*;
 import static chapter_1.data.TransactionsData.*;
 import static java.util.stream.Collectors.groupingBy;
 
+/**
+ * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 28
+ * 1.3. Streams
+ */
 public class example5_Streams {
 
     /**
@@ -60,9 +64,5 @@ public class example5_Streams {
         mostrarList(transactions);
         mapeo(transactions);
         mapeoStreams(transactions);
-    }
-
-    public static void main(String[] args) {
-        testExample5();
     }
 }
