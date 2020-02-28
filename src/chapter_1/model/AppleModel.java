@@ -1,5 +1,8 @@
 package chapter_1.model;
 
+/**
+ * en esta clase se encuentra la estructura de AppleModel
+ */
 public class AppleModel {
     private Integer weight;
     private String color;

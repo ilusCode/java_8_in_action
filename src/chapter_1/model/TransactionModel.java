@@ -2,6 +2,9 @@ package chapter_1.model;
 
 import java.util.Currency;
 
+/**
+ * en esta clase se encuentra la estructura de TransactionModel
+ */
 public class TransactionModel {
     int price;
     Currency currency;

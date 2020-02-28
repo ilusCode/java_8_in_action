@@ -15,21 +15,33 @@ public class example5_Streams {
     private example5_Streams() {
     }
 
+    /**
+     * Este metodo sirve para realizar un recorrido de una lista por medio de un map
+     * @param transactions
+     * @deprecated c esta variable se le asigna la modena que tiene la transaccion que se esta recorriendo
+     */
+    @Deprecated
     public static void mapeo(List<TransactionModel> transactions) {
         Map<Currency, List<TransactionModel>> transactionsByCurrencies = new HashMap<>();
         for (TransactionModel tr : transactions) {
             if (tr.getPrice() < 10) {
-                Currency currency = tr.getCurrency();
-                List<TransactionModel> transactionsForCurrency = transactionsByCurrencies.get(currency);
+                Currency c = tr.getCurrency();
+                List<TransactionModel> transactionsForCurrency = transactionsByCurrencies.get(c);
                 if (transactionsForCurrency == null) {
                     transactionsForCurrency = new ArrayList<>();
-                    transactionsByCurrencies.put(currency, transactionsForCurrency);
+                    transactionsByCurrencies.put(c, transactionsForCurrency);
                 }
                 transactionsForCurrency.add(tr);
             }
         }
     }
 
+    /**
+     * Este metodo sirve para realizar un recorrido de una lista por medio de un stream
+     * @param transactions
+     * @deprecated c esta variable se le asigna la modena que tiene la transaccion que se esta recorriendo
+     */
+    @Deprecated
     public static void mapeoStreams(List<TransactionModel> transactions) {
         Map<Currency, List<TransactionModel>> transactionsByCurrencies = transactions.stream().filter((TransactionModel t) -> t.getPrice() > 15).collect(groupingBy(TransactionModel::getCurrency));
         System.out.println(transactionsByCurrencies.keySet());
@@ -37,13 +49,16 @@ public class example5_Streams {
 
     /**
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     * @deprecated mapeo
+     * @deprecated mapeoStreams
      */
+    @Deprecated
     public static void testExample5() {
         System.out.println("Example #5");
         List<TransactionModel> transactions = creaList();
         cargarDatos(transactions);
         mostrarList(transactions);
-        //mapeo(transactions);
+        mapeo(transactions);
         mapeoStreams(transactions);
     }
 
