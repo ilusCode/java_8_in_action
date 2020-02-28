@@ -77,7 +77,7 @@ public class example3_Filter {
      * @param p p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia Predicate
      */
-    static List<AppleModel> fileterApples(List<AppleModel> inv, Predicate<AppleModel> p){
+    static List<AppleModel> filterApples(List<AppleModel> inv, Predicate<AppleModel> p){
         List<AppleModel> res=new ArrayList<>();
         for (AppleModel a:inv){
             if (p.test(a)){
@@ -95,10 +95,10 @@ public class example3_Filter {
         List<AppleModel> filterGreen = filterApplesGreen(inv);
         mostrarList(filterGreen);
         System.out.println("----------------------------- isGreenApple -----------------------------");
-        List<AppleModel>ga=fileterApples(inv, example3_Filter::isGreenApple);
+        List<AppleModel>ga= filterApples(inv, example3_Filter::isGreenApple);
         mostrarList(ga);
         System.out.println("----------------------------- isHeavyApples -----------------------------");
-        List<AppleModel>ha=fileterApples(inv, example3_Filter::isHeavyApples);
+        List<AppleModel>ha= filterApples(inv, example3_Filter::isHeavyApples);
         mostrarList(ha);
     }
 }
