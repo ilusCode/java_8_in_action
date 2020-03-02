@@ -13,6 +13,14 @@ import java.util.List;
  * Listing 2.1. Behavior parameterization: filtering apples with predicates
  */
 public class example10_ParameterizationFiltering {
+
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example10_ParameterizationFiltering() {
+
+    }
+
     private List<appleModel> heavyApples;
 
     static class AppleHeavyWeightPredicate implements applePredicate {

@@ -13,6 +13,12 @@ import java.util.List;
  */
 public class example8_AppleRedAndHeavyPredicate implements applePredicate {
 
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example8_AppleRedAndHeavyPredicate() {
+    }
+
     public boolean test(appleModel apple) {
         return "Verde".equals(apple.getColor()) && apple.getWeight() > 15;
     }

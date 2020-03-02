@@ -12,6 +12,13 @@ import java.util.List;
  * 2.2.1. Fourth attempt: filtering by abstract criteria
  */
 public class example7_ApplePredicate {
+
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example7_ApplePredicate() {
+    }
+
     /**
      * Este metodo hace uso de la interface as en donde al mandar a llamar al metodo se especifica la sentencia que se debe de cumplir
      *

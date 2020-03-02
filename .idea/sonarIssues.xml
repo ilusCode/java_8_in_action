@@ -138,6 +138,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_2/example14_Comparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/chapter_2/example1_Filter.java">
           <value>
             <set />
@@ -279,6 +284,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/interfaces/as.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/interfaces/comparator.java">
           <value>
             <set />
           </value>

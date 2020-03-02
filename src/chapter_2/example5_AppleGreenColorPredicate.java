@@ -13,6 +13,13 @@ import java.util.List;
  * 2.1. Different strategies for selecting an Apple
  */
 public class example5_AppleGreenColorPredicate implements applePredicate {
+
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example5_AppleGreenColorPredicate() {
+    }
+
     /**
      * este metodo sirve para asginar la sentecnia a un predicate
      *

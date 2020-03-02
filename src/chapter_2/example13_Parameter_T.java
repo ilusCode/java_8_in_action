@@ -12,11 +12,19 @@ import java.util.List;
  * 2.3.4. Seventh attempt: abstracting over List type
  */
 public class example13_Parameter_T {
+
     /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example13_Parameter_T() {
+    }
+
+    /**
+     * Este metodo cumple la funcion de filtrar sin embargo lo puede realizar con cualquier tipo de objeto
      *
      * @param list
      * @param p
-     * @param <T>
+     * @param <T>  se refiere a un objeto generico
      * @return
      */
     public static <T> List<T> filter(List<T> list, predicate<T> p) {
@@ -51,9 +59,5 @@ public class example13_Parameter_T {
         for (Integer i : evenNumber) {
             System.out.println(i.toString());
         }
-    }
-
-    public static void main(String[] args) {
-        testExample13();
     }
 }

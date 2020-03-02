@@ -5,13 +5,20 @@ package chapter_2;
  * Quiz 2.2: Anonymous class puzzler
  */
 public class example12_Anonymous_Class_Puzzler {
+
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example12_Anonymous_Class_Puzzler() {
+    }
+
     public final int value = 4;
 
     /**
      * este metodo sirve para ver los nivels de alcance de una variable
      */
     public void doIt() {
-        int val = 6;
+        int value = 6;
         Runnable r = new Runnable() {
             public final int value = 5;
 

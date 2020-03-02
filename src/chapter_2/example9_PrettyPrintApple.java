@@ -13,6 +13,12 @@ import java.util.List;
 public class example9_PrettyPrintApple {
 
     /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example9_PrettyPrintApple() {
+    }
+
+    /**
      * Este metodo sirve para imprimir el color del arreglo que se recorre
      */
     static class AppleFancyFormatter implements appleFormatter {

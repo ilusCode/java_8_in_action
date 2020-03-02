@@ -14,6 +14,12 @@ import java.util.List;
 public class example11_AnonymusClass {
 
     /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example11_AnonymusClass() {
+    }
+
+    /**
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExamole11() {
