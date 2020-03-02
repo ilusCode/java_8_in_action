@@ -1,9 +1,9 @@
 package chapter_2;
 
-import main.data.InventoryData;
-import main.interfaces.ApplePredicate;
-import main.interfaces.Predicate;
-import main.model.AppleModel;
+import main.data.inventoryData;
+import main.interfaces.applePredicate;
+import main.interfaces.predicate;
+import main.model.appleModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,14 +12,14 @@ import java.util.List;
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 41 - 42
  * 2.1. Different strategies for selecting an Apple
  */
-public class example5_AppleGreenColorPredicate implements ApplePredicate {
+public class example5_AppleGreenColorPredicate implements applePredicate {
     /**
      * este metodo sirve para asginar la sentecnia a un predicate
      *
      * @param model
      * @return regresa un true or false dependiendo si se cumple la sentencia o no
      */
-    public boolean test(AppleModel model) {
+    public boolean test(appleModel model) {
         return model.getWeight() > 15;
     }
 
@@ -30,9 +30,9 @@ public class example5_AppleGreenColorPredicate implements ApplePredicate {
      * @param p    p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    static List<AppleModel> filterWhitePredicate(List<AppleModel> list, Predicate<AppleModel> p) {
-        List<AppleModel> res = new ArrayList<>();
-        for (AppleModel a : list) {
+    static List<appleModel> filterWhitePredicate(List<appleModel> list, predicate<appleModel> p) {
+        List<appleModel> res = new ArrayList<>();
+        for (appleModel a : list) {
             if (p.test(a)) {
                 res.add(a);
             }
@@ -46,11 +46,11 @@ public class example5_AppleGreenColorPredicate implements ApplePredicate {
     public static void testExample5() {
         System.out.println("Chapther 2");
         System.out.println("Example #5");
-        InventoryData d = new InventoryData();
-        List<AppleModel> list = d.creaList();
+        inventoryData d = new inventoryData();
+        List<appleModel> list = d.creaList();
         d.cargarDatos(list);
         example5_AppleGreenColorPredicate e5 = new example5_AppleGreenColorPredicate();
-        Predicate<AppleModel> p = e5::test;
+        predicate<appleModel> p = e5::test;
         d.mostrarList(filterWhitePredicate(list, p));
     }
 }

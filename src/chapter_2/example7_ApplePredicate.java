@@ -1,8 +1,8 @@
 package chapter_2;
 
-import main.data.InventoryData;
-import main.interfaces.Predicate;
-import main.model.AppleModel;
+import main.data.inventoryData;
+import main.interfaces.predicate;
+import main.model.appleModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,9 +19,9 @@ public class example7_ApplePredicate {
      * @param p    p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    static List<AppleModel> filterWithPredicate(List<AppleModel> list, Predicate p) {
-        List<AppleModel> res = new ArrayList<>();
-        for (AppleModel a : list) {
+    static List<appleModel> filterWithPredicate(List<appleModel> list, predicate p) {
+        List<appleModel> res = new ArrayList<>();
+        for (appleModel a : list) {
             if (p.test(a)) {
                 res.add(a);
             }
@@ -35,7 +35,7 @@ public class example7_ApplePredicate {
      * @param model
      * @return regresa un true or false dependiendo si se cumple la sentencia o no
      */
-    public static boolean test(AppleModel model) {
+    public static boolean test(appleModel model) {
         return "Verde".equals(model.getColor());
     }
 
@@ -45,10 +45,10 @@ public class example7_ApplePredicate {
     public static void testExample7() {
         System.out.println("Chapther 2");
         System.out.println("Example #7");
-        InventoryData d = new InventoryData();
-        List<AppleModel> list = d.creaList();
+        inventoryData d = new inventoryData();
+        List<appleModel> list = d.creaList();
         d.cargarDatos(list);
-        Predicate<AppleModel> p = example7_ApplePredicate::test;
+        predicate<appleModel> p = example7_ApplePredicate::test;
         d.mostrarList(filterWithPredicate(list, p));
 
     }

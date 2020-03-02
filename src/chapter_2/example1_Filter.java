@@ -1,12 +1,10 @@
 package chapter_2;
 
-import main.data.InventoryData;
-import main.model.AppleModel;
+import main.data.inventoryData;
+import main.model.appleModel;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static main.data.InventoryData.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 38
@@ -26,9 +24,9 @@ public class example1_Filter {
      * @param list es una lista donde se encuentra los datos con los que se van a trabajar
      * @return una lista en donde se eñ bjeto en el campo color es verde
      */
-    public static List<AppleModel> filterApplesGreen(List<AppleModel> list) {
-        List<AppleModel> res = new ArrayList();
-        for (AppleModel apple : list) {
+    public static List<appleModel> filterApplesGreen(List<appleModel> list) {
+        List<appleModel> res = new ArrayList();
+        for (appleModel apple : list) {
             if ("Verde".equals(apple.getColor())) {
                 res.add(apple);
             }
@@ -42,10 +40,10 @@ public class example1_Filter {
     public static void testExample1() {
         System.out.println("Chapther 2");
         System.out.println("Example #1");
-        InventoryData d=new InventoryData();
-        List<AppleModel> list = d.creaList();
+        inventoryData d=new inventoryData();
+        List<appleModel> list = d.creaList();
         d.cargarDatos(list);
-        List<AppleModel> filterGreen = filterApplesGreen(list);
+        List<appleModel> filterGreen = filterApplesGreen(list);
         d.mostrarList(filterGreen);
     }
 }

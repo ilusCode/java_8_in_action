@@ -3,18 +3,18 @@ package main.model;
 import java.util.Currency;
 
 /**
- * en esta clase se encuentra la estructura de TransactionModel
+ * en esta clase se encuentra la estructura de transactionModel
  */
-public class TransactionModel {
+public class transactionModel {
     int price;
     Currency currency;
 
-    public TransactionModel(int price, Currency currency) {
+    public transactionModel(int price, Currency currency) {
         this.price = price;
         this.currency = currency;
     }
 
-    public TransactionModel() {
+    public transactionModel() {
         this.price = 0;
         this.currency = Currency.getInstance("");
     }

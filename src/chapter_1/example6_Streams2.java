@@ -1,7 +1,7 @@
 package chapter_1;
 
-import main.data.InventoryData;
-import main.model.AppleModel;
+import main.data.inventoryData;
+import main.model.appleModel;
 
 import java.util.List;
 
@@ -23,20 +23,20 @@ public class example6_Streams2 {
      * este metodo se utiliza para la obtencion de concurrecnias de pocas ocaciones
      *
      * @param list es una lista donde se encuentra los datos con los que se van a trabajar
-     * @return regresa una lista con los objetos de tipo AppleModel
+     * @return regresa una lista con los objetos de tipo appleModel
      */
-    public static List<AppleModel> sequentialProcessing(List<AppleModel> list) {
-        return list.stream().filter((AppleModel am) -> am.getWeight() < 15).collect(toList());
+    public static List<appleModel> sequentialProcessing(List<appleModel> list) {
+        return list.stream().filter((appleModel am) -> am.getWeight() < 15).collect(toList());
     }
 
     /**
      * este metodo se utiliza para la obtencion de concurrecnias de muchas consultas o de retorno de muchos valores
      *
      * @param list es una lista donde se encuentra los datos con los que se van a trabajar
-     * @return regresa una lista con los objetos de tipo AppleModel
+     * @return regresa una lista con los objetos de tipo appleModel
      */
-    public static List<AppleModel> parallelProcessing(List<AppleModel> list) {
-        return list.parallelStream().filter((AppleModel am) -> am.getWeight() < 15).collect(toList());
+    public static List<appleModel> parallelProcessing(List<appleModel> list) {
+        return list.parallelStream().filter((appleModel am) -> am.getWeight() < 15).collect(toList());
     }
 
     /**
@@ -45,15 +45,15 @@ public class example6_Streams2 {
     private static void testExample6() {
         System.out.println("Chapther 1");
         System.out.println("Example #6");
-        InventoryData d = new InventoryData();
-        List<AppleModel> list = d.creaList();
+        inventoryData d = new inventoryData();
+        List<appleModel> list = d.creaList();
         d.cargarDatos(list);
         d.mostrarList(list);
         System.out.println("----------------------------- Sequential Processing -----------------------------");
-        List<AppleModel> sp_heavyApple = sequentialProcessing(list);
+        List<appleModel> sp_heavyApple = sequentialProcessing(list);
         d.mostrarList(sp_heavyApple);
         System.out.println("----------------------------- Parallel Processing -----------------------------");
-        List<AppleModel> pp_heavyApple = parallelProcessing(list);
+        List<appleModel> pp_heavyApple = parallelProcessing(list);
         d.mostrarList(pp_heavyApple);
     }
 }

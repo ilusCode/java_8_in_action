@@ -8,13 +8,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 43
- * Passing code/behavior
+ * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 49
+ * 2.3.2. Fifth attempt: using an anonymous class
  */
-public class example8_AppleRedAndHeavyPredicate implements applePredicate {
+public class example11_AnonymusClass {
 
-    public boolean test(appleModel apple) {
-        return "Verde".equals(apple.getColor()) && apple.getWeight() > 15;
+    /**
+     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     */
+    public static void testExamole11() {
+        inventoryData d = new inventoryData();
+        List<appleModel> list = d.creaList();
+        d.cargarDatos(list);
+        List<appleModel> redApples = filterApples(list, new applePredicate() {
+            @Override
+            public boolean test(appleModel apple) {
+                return "Roja".equals(apple.getColor());
+            }
+        });
+        d.mostrarList(redApples);
     }
 
     /**
@@ -32,16 +44,5 @@ public class example8_AppleRedAndHeavyPredicate implements applePredicate {
             }
         }
         return res;
-    }
-
-    /**
-     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
-     */
-    public static void testExample8() {
-        inventoryData d = new inventoryData();
-        List<appleModel> list = d.creaList();
-        d.cargarDatos(list);
-        List<appleModel> redAndHeavyApples = filterApples(list, new example8_AppleRedAndHeavyPredicate());
-        d.mostrarList(redAndHeavyApples);
     }
 }

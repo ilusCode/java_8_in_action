@@ -1,20 +1,20 @@
 package main.data;
 
-import main.interfaces.Inventory;
-import main.model.AppleModel;
+import main.interfaces.inventory;
+import main.model.appleModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class InventoryData implements Inventory {
+public class inventoryData implements inventory {
 
     @Override
     /**
-     * este metodo sirve para la creacion de la lista con un modelo AppleModel
+     * este metodo sirve para la creacion de la lista con un modelo appleModel
      *
      * @return regresa una lista con el tipo de modelo asignado
      */
-    public List<AppleModel> creaList() {
+    public List<appleModel> creaList() {
          return new ArrayList<>();
     }
 
@@ -28,8 +28,8 @@ public class InventoryData implements Inventory {
      * @param pieces
      * @return regresa una lista llena con los objetos que se les paso como parametros
      */
-    public boolean llenarList(List<AppleModel> list, int weight, String color, int pieces) {
-        AppleModel a = new AppleModel();
+    public boolean llenarList(List<appleModel> list, int weight, String color, int pieces) {
+        appleModel a = new appleModel();
         a.setWeight(weight);
         a.setColor(color);
         a.setPiece(pieces);
@@ -40,9 +40,9 @@ public class InventoryData implements Inventory {
     /**
      * este metodo sirve para el llenado de una lista de forma manual
      *
-     * @param list es la lista a llenar con el modelo de AppleModel
+     * @param list es la lista a llenar con el modelo de appleModel
      */
-    public void cargarDatos(List<AppleModel> list) {
+    public void cargarDatos(List<appleModel> list) {
         llenarList(list, 21, "Azul", 12);
         llenarList(list, 23, "Amarilla", 12);
         llenarList(list, 43, "Roja", 3);
@@ -56,8 +56,8 @@ public class InventoryData implements Inventory {
      *
      * @param list
      */
-    public void mostrarList(List<AppleModel> list) {
-        for (AppleModel x : list) {
+    public void mostrarList(List<appleModel> list) {
+        for (appleModel x : list) {
             System.out.println(x.getWeight() + " - " + x.getColor() + " - " + x.getPiece());
         }
     }

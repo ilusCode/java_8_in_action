@@ -1,7 +1,7 @@
 package main.interfaces;
 
 @FunctionalInterface
-public interface Predicate<T> {
+public interface predicate<T> {
     /**
      * @param t
      * @return

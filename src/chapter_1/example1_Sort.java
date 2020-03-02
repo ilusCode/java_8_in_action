@@ -1,7 +1,7 @@
 package chapter_1;
 
-import main.data.InventoryData;
-import main.model.AppleModel;
+import main.data.inventoryData;
+import main.model.appleModel;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -23,11 +23,11 @@ public class example1_Sort {
      * Este metodo sirve para optimizar el algoritmo de ordenamiento burbuja, en donde se le indica bajo que argumento va hacer el ordenamiento.
     * @param inventory es una lista de datos de una manzana.
     * **/
-    public static void sort(List<AppleModel> inventory, String argument){
+    public static void sort(List<appleModel> inventory, String argument){
         if (argument.equals("weight") ){
-            Collections.sort(inventory, new Comparator<AppleModel>() {
+            Collections.sort(inventory, new Comparator<appleModel>() {
                 @Override
-                public int compare(AppleModel o1, AppleModel o2) {
+                public int compare(appleModel o1, appleModel o2) {
                     return o1.getWeight().compareTo(o2.getWeight());
                 }
             });
@@ -36,9 +36,9 @@ public class example1_Sort {
         //----------------------------- Color -----------------------------
 
         if (argument.equals("color")){
-            Collections.sort(inventory, new Comparator<AppleModel>() {
+            Collections.sort(inventory, new Comparator<appleModel>() {
                 @Override
-                public int compare(AppleModel o1, AppleModel o2) {
+                public int compare(appleModel o1, appleModel o2) {
                     return o1.getColor().compareTo(o2.getColor());
                 }
             });
@@ -58,15 +58,15 @@ public class example1_Sort {
     public static void testExample1(){
         System.out.println("Chapther 1");
         System.out.println("Example #1");
-        InventoryData d = new InventoryData();
-        List<AppleModel> x= d.creaList();
+        inventoryData d = new inventoryData();
+        List<appleModel> x= d.creaList();
         d.cargarDatos(x);
         System.out.println("Antes");
         d.mostrarList(x);
         example1_Sort.sort(x,"color");
         System.out.println("----------------------------------------------------------------------------");
         System.out.println("Ahora");
-        x.sort(comparing(AppleModel::getPiece));
+        x.sort(comparing(appleModel::getPiece));
         d.mostrarList(x);
     }
 }

@@ -1,12 +1,10 @@
 package chapter_2;
 
-import main.data.InventoryData;
-import main.model.AppleModel;
+import main.data.inventoryData;
+import main.model.appleModel;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static main.data.InventoryData.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 40
@@ -29,9 +27,9 @@ public class example4_FilterByColorAndWeight {
      * @param flag   parametro para realiar el filtrado de tipo boolean
      * @return regresa una lista del filtrado
      */
-    public static List<AppleModel> filterApples(List<AppleModel> list, String color, int weight, boolean flag) {
-        List<AppleModel> res = new ArrayList<>();
-        for (AppleModel am : list) {
+    public static List<appleModel> filterApples(List<appleModel> list, String color, int weight, boolean flag) {
+        List<appleModel> res = new ArrayList<>();
+        for (appleModel am : list) {
             if ((flag && am.getColor().equals(color)) || (!flag && am.getWeight() > weight)) {
                 res.add(am);
             }
@@ -45,12 +43,12 @@ public class example4_FilterByColorAndWeight {
     public static void testExample4() {
         System.out.println("Chapther 2");
         System.out.println("Example #4");
-        InventoryData d=new InventoryData();
-        List<AppleModel> list = d.creaList();
+        inventoryData d=new inventoryData();
+        List<appleModel> list = d.creaList();
         d.cargarDatos(list);
-        List<AppleModel> greenApple = filterApples(list, "Verde", 0, true);
+        List<appleModel> greenApple = filterApples(list, "Verde", 0, true);
         d.mostrarList(greenApple);
-        List<AppleModel> heavyApple = filterApples(list, "", 15, false);
+        List<appleModel> heavyApple = filterApples(list, "", 15, false);
         d.mostrarList(heavyApple);
     }
 }
