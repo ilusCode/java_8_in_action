@@ -2,10 +2,11 @@ package chapter_1;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.util.Arrays;
 
 /**
- *  El ejemplo actual fue extraido del libro Java 8 in action de la pagina 24
- *  Figure 1.4. Passing the method reference File::isHidden to the method listFiles
+ * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 24
+ * Figure 1.4. Passing the method reference File::isHidden to the method listFiles
  */
 public class example2_Hidden {
     /**
@@ -15,17 +16,17 @@ public class example2_Hidden {
     }
 
     private static void mostrarhidden(File[] hidden) {
-        for (int i = 0; i <hidden.length ; i++) {
-            System.out.println(hidden.toString());
+        for (int i = 0; i < hidden.length; i++) {
+            System.out.println(Arrays.toString(hidden));
         }
     }
 
     private static void hiddenAct(File[] hidden) {
-        hidden=new File(".").listFiles(File::isHidden);
+        hidden = new File(".").listFiles(File::isHidden);
     }
 
     private static void hiddenAnt(File[] hidden) {
-        hidden= new File(".").listFiles(new FileFilter() {
+        hidden = new File(".").listFiles(new FileFilter() {
             @Override
             public boolean accept(File pathname) {
                 return pathname.isHidden();
@@ -36,7 +37,7 @@ public class example2_Hidden {
     /**
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
-    public static void testExample2(){
+    public static void testExample2() {
         System.out.println("Chapther 1");
         System.out.println("Example #2");
         File[] hidden = new File[0];

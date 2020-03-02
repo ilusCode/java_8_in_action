@@ -1,10 +1,10 @@
 package chapter_1;
 
+import main.data.TransactionsData;
 import main.model.TransactionModel;
 
 import java.util.*;
 
-import static main.data.TransactionsData.*;
 import static java.util.stream.Collectors.groupingBy;
 
 /**
@@ -21,6 +21,7 @@ public class example5_Streams {
 
     /**
      * Este metodo sirve para realizar un recorrido de una lista por medio de un map
+     *
      * @param transactions
      * @deprecated c esta variable se le asigna la modena que tiene la transaccion que se esta recorriendo
      */
@@ -42,6 +43,7 @@ public class example5_Streams {
 
     /**
      * Este metodo sirve para realizar un recorrido de una lista por medio de un stream
+     *
      * @param transactions
      * @deprecated c esta variable se le asigna la modena que tiene la transaccion que se esta recorriendo
      */
@@ -53,16 +55,17 @@ public class example5_Streams {
 
     /**
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
-     * @deprecated mapeo
+     *
      * @deprecated mapeoStreams
      */
     @Deprecated
     public static void testExample5() {
         System.out.println("Chapther 1");
         System.out.println("Example #5");
-        List<TransactionModel> transactions = creaList();
-        cargarDatos(transactions);
-        mostrarList(transactions);
+        TransactionsData t = new TransactionsData();
+        List<TransactionModel> transactions = t.creaList();
+        t.cargarDatos(transactions);
+        t.mostrarList(transactions);
         mapeo(transactions);
         mapeoStreams(transactions);
     }

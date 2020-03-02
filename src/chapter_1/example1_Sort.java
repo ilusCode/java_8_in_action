@@ -1,5 +1,6 @@
 package chapter_1;
 
+import main.data.InventoryData;
 import main.model.AppleModel;
 
 import java.util.Collections;
@@ -7,7 +8,6 @@ import java.util.Comparator;
 import java.util.List;
 
 import static java.util.Comparator.comparing;
-import static main.data.InventoryData.*;
 /**
  *  El ejemplo actual fue extraido del libro Java 8 in action de la pagina 12
  */
@@ -58,14 +58,15 @@ public class example1_Sort {
     public static void testExample1(){
         System.out.println("Chapther 1");
         System.out.println("Example #1");
-        List<AppleModel> x= creaList();
-        cargarDatos(x);
+        InventoryData d = new InventoryData();
+        List<AppleModel> x= d.creaList();
+        d.cargarDatos(x);
         System.out.println("Antes");
-        mostrarList(x);
+        d.mostrarList(x);
         example1_Sort.sort(x,"color");
         System.out.println("----------------------------------------------------------------------------");
         System.out.println("Ahora");
         x.sort(comparing(AppleModel::getPiece));
-        mostrarList(x);
+        d.mostrarList(x);
     }
 }

@@ -1,5 +1,6 @@
 package chapter_2;
 
+import main.data.InventoryData;
 import main.model.AppleModel;
 
 import java.util.ArrayList;
@@ -25,18 +26,19 @@ public class example2_FilterByColor {
     public static void testExample2() {
         System.out.println("Chapther 2");
         System.out.println("Example #2");
-        List<AppleModel> list = creaList();
-        cargarDatos(list);
-        List<AppleModel> greenApples = filterApplesByColor(list,"Verde");
-        mostrarList(greenApples);
-        List<AppleModel> redApples = filterApplesByColor(list,"Roja");
-        mostrarList(redApples);
+        InventoryData d=new InventoryData();
+        List<AppleModel> list = d.creaList();
+        d.cargarDatos(list);
+        List<AppleModel> greenApples = filterApplesByColor(list, "Verde");
+        d.mostrarList(greenApples);
+        List<AppleModel> redApples = filterApplesByColor(list, "Roja");
+        d.mostrarList(redApples);
     }
 
     public static List<AppleModel> filterApplesByColor(List<AppleModel> list, String color) {
         List<AppleModel> res = new ArrayList<>();
         for (AppleModel am : list) {
-            if (am.getColor().equals(color)){
+            if (am.getColor().equals(color)) {
                 res.add(am);
             }
         }

@@ -1,5 +1,6 @@
 package chapter_2;
 
+import main.data.InventoryData;
 import main.model.AppleModel;
 
 import java.util.ArrayList;
@@ -22,10 +23,10 @@ public class example4_FilterByColorAndWeight {
     /**
      * Este metodo realiza un filtrado dependiendo a una $flag$
      *
-     * @param list es una lista donde se encuentra los datos con los que se van a trabajar
-     * @param color parametro para realiar el filtrado de tipo String
+     * @param list   es una lista donde se encuentra los datos con los que se van a trabajar
+     * @param color  parametro para realiar el filtrado de tipo String
      * @param weight parametro para realiar el filtrado de tipo int
-     * @param flag parametro para realiar el filtrado de tipo boolean
+     * @param flag   parametro para realiar el filtrado de tipo boolean
      * @return regresa una lista del filtrado
      */
     public static List<AppleModel> filterApples(List<AppleModel> list, String color, int weight, boolean flag) {
@@ -44,11 +45,12 @@ public class example4_FilterByColorAndWeight {
     public static void testExample4() {
         System.out.println("Chapther 2");
         System.out.println("Example #4");
-        List<AppleModel> list = creaList();
-        cargarDatos(list);
+        InventoryData d=new InventoryData();
+        List<AppleModel> list = d.creaList();
+        d.cargarDatos(list);
         List<AppleModel> greenApple = filterApples(list, "Verde", 0, true);
-        mostrarList(greenApple);
+        d.mostrarList(greenApple);
         List<AppleModel> heavyApple = filterApples(list, "", 15, false);
-        mostrarList(heavyApple);
+        d.mostrarList(heavyApple);
     }
 }

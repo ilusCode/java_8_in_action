@@ -1,5 +1,6 @@
 package chapter_2;
 
+import main.data.InventoryData;
 import main.model.AppleModel;
 
 import java.util.ArrayList;
@@ -35,9 +36,10 @@ public class example3_FilterByWeight {
     public static void testExample3() {
         System.out.println("Chapther 2");
         System.out.println("Example #3");
-        List<AppleModel> list = creaList();
-        cargarDatos(list);
+        InventoryData d=new InventoryData();
+        List<AppleModel> list = d.creaList();
+        d.cargarDatos(list);
         List<AppleModel> weightApples = filterApplesByWeight(list, 10);
-        mostrarList(weightApples);
+        d.mostrarList(weightApples);
     }
 }

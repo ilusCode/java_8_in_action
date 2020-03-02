@@ -1,5 +1,6 @@
 package chapter_2;
 
+import main.data.InventoryData;
 import main.model.AppleModel;
 
 import java.util.ArrayList;
@@ -21,13 +22,14 @@ public class example1_Filter {
 
     /**
      * Este metodo realiza un filtrado por medio del color verde
+     *
      * @param list es una lista donde se encuentra los datos con los que se van a trabajar
      * @return una lista en donde se eñ bjeto en el campo color es verde
      */
-    public static List<AppleModel> filterApplesGreen(List<AppleModel> list){
-        List<AppleModel> res=new ArrayList();
-        for (AppleModel apple:list){
-            if ("Verde".equals(apple.getColor())){
+    public static List<AppleModel> filterApplesGreen(List<AppleModel> list) {
+        List<AppleModel> res = new ArrayList();
+        for (AppleModel apple : list) {
+            if ("Verde".equals(apple.getColor())) {
                 res.add(apple);
             }
         }
@@ -40,9 +42,10 @@ public class example1_Filter {
     public static void testExample1() {
         System.out.println("Chapther 2");
         System.out.println("Example #1");
-        List<AppleModel> list= creaList();
-        cargarDatos(list);
+        InventoryData d=new InventoryData();
+        List<AppleModel> list = d.creaList();
+        d.cargarDatos(list);
         List<AppleModel> filterGreen = filterApplesGreen(list);
-        mostrarList(filterGreen);
+        d.mostrarList(filterGreen);
     }
 }
