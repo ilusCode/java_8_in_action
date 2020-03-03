@@ -1,4 +1,6 @@
 package main.interfaces.funcionales;
 
-public interface Function {
+@FunctionalInterface
+public interface Function<T, R> {
+    R apply(T t);
 }

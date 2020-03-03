@@ -1,4 +1,4 @@
-package chapter_3;
+package main.interfaces.funcionales;
 
 import java.io.BufferedReader;
 import java.io.IOException;

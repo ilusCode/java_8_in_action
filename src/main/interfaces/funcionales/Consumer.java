@@ -1,4 +1,6 @@
 package main.interfaces.funcionales;
 
-public interface Consumer {
+@FunctionalInterface
+public interface Consumer<T> {
+    void accept(T t);
 }
