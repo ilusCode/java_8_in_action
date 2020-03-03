@@ -1,7 +1,7 @@
 package chapter_2;
 
 import main.data.inventoryData;
-import main.interfaces.applePredicate;
+import main.interfaces.ApplePredicate;
 import main.model.appleModel;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import static main.Genericos.creaList;
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 43
  * Passing code/behavior
  */
-public class example8_AppleRedAndHeavyPredicate implements applePredicate {
+public class example8_AppleRedAndHeavyPredicate implements ApplePredicate {
 
     /**
      * Se crean los contructores privados derivado a una recomendacion de Sonar
@@ -33,7 +33,7 @@ public class example8_AppleRedAndHeavyPredicate implements applePredicate {
      * @param p   p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    public static List<appleModel> filterApples(List<appleModel> inv, applePredicate p) {
+    public static List<appleModel> filterApples(List<appleModel> inv, ApplePredicate p) {
         List<appleModel> res = new ArrayList<>();
         for (appleModel a : inv) {
             if (p.test(a)) {

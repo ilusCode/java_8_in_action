@@ -1,7 +1,7 @@
 package chapter_2;
 
 import main.data.inventoryData;
-import main.interfaces.applePredicate;
+import main.interfaces.ApplePredicate;
 import main.model.appleModel;
 
 import java.util.ArrayList;
@@ -23,14 +23,14 @@ public class example10_ParameterizationFiltering {
 
     }
 
-    static class AppleHeavyWeightPredicate implements applePredicate {
+    static class AppleHeavyWeightPredicate implements ApplePredicate {
         @Override
         public boolean test(appleModel apple) {
             return apple.getWeight() > 10;
         }
     }
 
-    static class AppleGrayColorPredicate implements applePredicate {
+    static class AppleGrayColorPredicate implements ApplePredicate {
         @Override
         public boolean test(appleModel apple) {
             return "Gris".equals(apple.getColor());
@@ -44,7 +44,7 @@ public class example10_ParameterizationFiltering {
      * @param p   p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    public static List<appleModel> filterApples(List<appleModel> inv, applePredicate p) {
+    public static List<appleModel> filterApples(List<appleModel> inv, ApplePredicate p) {
         List<appleModel> res = new ArrayList<>();
         for (appleModel a : inv) {
             if (p.test(a)) {
@@ -67,7 +67,7 @@ public class example10_ParameterizationFiltering {
         System.out.println("--------------------------- AppleGrayColorPredicate ---------------------------");
         List<appleModel> heavyApples = filterApples(list, new AppleGrayColorPredicate());
         d.mostrarList(heavyApples);
-        System.out.println("--------------------------- AppleHeavyWeight predicate ---------------------------");
+        System.out.println("--------------------------- AppleHeavyWeight Predicate ---------------------------");
         List<appleModel> greenApples = filterApples(list, new AppleHeavyWeightPredicate());
         d.mostrarList(greenApples);
     }

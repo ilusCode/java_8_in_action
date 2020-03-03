@@ -5,7 +5,7 @@ import main.model.transactionModel;
 import java.util.Currency;
 import java.util.List;
 
-public interface transactions {
+public interface Transactions {
 
     boolean llenarList(List<transactionModel> list, int price, Currency currency);
 

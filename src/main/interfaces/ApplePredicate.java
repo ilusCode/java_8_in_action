@@ -2,6 +2,6 @@ package main.interfaces;
 
 import main.model.appleModel;
 
-public interface applePredicate {
+public interface ApplePredicate {
     boolean test(appleModel apple);
 }

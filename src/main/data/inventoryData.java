@@ -1,12 +1,11 @@
 package main.data;
 
-import main.interfaces.inventory;
+import main.interfaces.Inventory;
 import main.model.appleModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class inventoryData implements inventory {
+public class inventoryData implements Inventory {
     @Override
     /**
      * este metodo sirve para la asignacion de valores al objeto de la lista

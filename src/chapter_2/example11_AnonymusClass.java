@@ -1,7 +1,7 @@
 package chapter_2;
 
 import main.data.inventoryData;
-import main.interfaces.applePredicate;
+import main.interfaces.ApplePredicate;
 import main.model.appleModel;
 
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class example11_AnonymusClass {
      * @param p   p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    public static List<appleModel> filterApples(List<appleModel> inv, applePredicate p) {
+    public static List<appleModel> filterApples(List<appleModel> inv, ApplePredicate p) {
         List<appleModel> res = new ArrayList<>();
         for (appleModel a : inv) {
             if (p.test(a)) {
@@ -47,7 +47,7 @@ public class example11_AnonymusClass {
         inventoryData d = new inventoryData();
         List<appleModel> list = creaList();
         d.cargarDatos(list);
-        List<appleModel> redApples = filterApples(list, new applePredicate() {
+        List<appleModel> redApples = filterApples(list, new ApplePredicate() {
             @Override
             public boolean test(appleModel apple) {
                 return "Roja".equals(apple.getColor());

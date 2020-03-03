@@ -1,5 +1,5 @@
 package main.interfaces;
 
-public interface runnable {
+public interface Rrunnable {
     void run();
 }

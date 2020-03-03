@@ -1,7 +1,7 @@
 package chapter_1;
 
 import main.data.inventoryData;
-import main.interfaces.funcionales.predicate;
+import main.interfaces.funcionales.Predicate;
 import main.model.appleModel;
 
 import java.util.ArrayList;
@@ -82,7 +82,7 @@ public class example3_Filter {
      * @param p   p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    static List<appleModel> filterApples(List<appleModel> inv, predicate<appleModel> p) {
+    static List<appleModel> filterApples(List<appleModel> inv, Predicate<appleModel> p) {
         List<appleModel> res = new ArrayList<>();
         for (appleModel a : inv) {
             if (p.test(a)) {

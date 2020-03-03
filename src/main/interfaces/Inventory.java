@@ -4,7 +4,7 @@ import main.model.appleModel;
 
 import java.util.List;
 
-public interface inventory {
+public interface Inventory {
     boolean llenarList(List<appleModel> list, int weight, String color, int pieces);
 
     void cargarDatos(List<appleModel> list);

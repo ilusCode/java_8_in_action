@@ -37,6 +37,9 @@ public class example3_MethodRunnable {
         };
     }
 
+    /**
+     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     */
     public static void testExample3() {
         comentar("Capilulo 3", "Example #3", "Distinta implementacion de hilos", "--------------------------------");
         Runnable r1 = useLambda();

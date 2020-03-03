@@ -1,8 +1,8 @@
 package chapter_2;
 
 import main.data.inventoryData;
-import main.interfaces.applePredicate;
-import main.interfaces.funcionales.predicate;
+import main.interfaces.ApplePredicate;
+import main.interfaces.funcionales.Predicate;
 import main.model.appleModel;
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import static main.Genericos.creaList;
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 41 - 42
  * 2.1. Different strategies for selecting an Apple
  */
-public class example5_AppleGreenColorPredicate implements applePredicate {
+public class example5_AppleGreenColorPredicate implements ApplePredicate {
 
     /**
      * Se crean los contructores privados derivado a una recomendacion de Sonar
@@ -24,7 +24,7 @@ public class example5_AppleGreenColorPredicate implements applePredicate {
     }
 
     /**
-     * este metodo sirve para asginar la sentecnia a un predicate
+     * este metodo sirve para asginar la sentecnia a un Predicate
      *
      * @param model
      * @return regresa un true or false dependiendo si se cumple la sentencia o no
@@ -40,7 +40,7 @@ public class example5_AppleGreenColorPredicate implements applePredicate {
      * @param p    p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    static List<appleModel> filterWhitePredicate(List<appleModel> list, predicate<appleModel> p) {
+    static List<appleModel> filterWhitePredicate(List<appleModel> list, Predicate<appleModel> p) {
         List<appleModel> res = new ArrayList<>();
         for (appleModel a : list) {
             if (p.test(a)) {
@@ -59,7 +59,7 @@ public class example5_AppleGreenColorPredicate implements applePredicate {
         List<appleModel> list = creaList();
         d.cargarDatos(list);
         example5_AppleGreenColorPredicate e5 = new example5_AppleGreenColorPredicate();
-        predicate<appleModel> p = e5::test;
+        Predicate<appleModel> p = e5::test;
         d.mostrarList(filterWhitePredicate(list, p));
     }
 }

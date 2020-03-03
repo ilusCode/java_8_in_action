@@ -1,7 +1,7 @@
 package chapter_2;
 
 import main.data.inventoryData;
-import main.interfaces.funcionales.predicate;
+import main.interfaces.funcionales.Predicate;
 import main.model.appleModel;
 
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class example7_ApplePredicate {
      * @param p    p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    static List<appleModel> filterWithPredicate(List<appleModel> list, predicate p) {
+    static List<appleModel> filterWithPredicate(List<appleModel> list, Predicate p) {
         List<appleModel> res = new ArrayList<>();
         for (appleModel a : list) {
             if (p.test(a)) {
@@ -40,7 +40,7 @@ public class example7_ApplePredicate {
     }
 
     /**
-     * este metodo sirve para asginar la sentecnia a un predicate
+     * este metodo sirve para asginar la sentecnia a un Predicate
      *
      * @param model
      * @return regresa un true or false dependiendo si se cumple la sentencia o no
@@ -57,7 +57,7 @@ public class example7_ApplePredicate {
         inventoryData d = new inventoryData();
         List<appleModel> list = creaList();
         d.cargarDatos(list);
-        predicate<appleModel> p = example7_ApplePredicate::test;
+        Predicate<appleModel> p = example7_ApplePredicate::test;
         d.mostrarList(filterWithPredicate(list, p));
 
     }

@@ -1,18 +1,18 @@
 package main.data;
 
-import main.interfaces.transactions;
+import main.interfaces.Transactions;
 import main.model.transactionModel;
 
 import java.util.Currency;
 import java.util.List;
 import java.util.Locale;
 
-public class transactionsData implements transactions {
+public class transactionsData implements Transactions {
 
     /**
      * Se crean los contructores privados derivado a una recomendacion de Sonar
      */
-    private transactionsData() {
+    public transactionsData() {
     }
 
     /**
