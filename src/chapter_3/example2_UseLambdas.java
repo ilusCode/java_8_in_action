@@ -14,6 +14,12 @@ import static main.Genericos.*;
 public class example2_UseLambdas {
 
     /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example2_UseLambdas() {
+    }
+
+    /**
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample2() {

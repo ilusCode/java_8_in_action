@@ -3,7 +3,6 @@ package main.data;
 import main.interfaces.transactions;
 import main.model.transactionModel;
 
-import java.util.ArrayList;
 import java.util.Currency;
 import java.util.List;
 import java.util.Locale;
@@ -13,7 +12,7 @@ public class transactionsData implements transactions {
     /**
      * Se crean los contructores privados derivado a una recomendacion de Sonar
      */
-    public transactionsData() {
+    private transactionsData() {
     }
 
     /**

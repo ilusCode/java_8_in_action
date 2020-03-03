@@ -23,8 +23,6 @@ public class example10_ParameterizationFiltering {
 
     }
 
-    private List<appleModel> heavyApples;
-
     static class AppleHeavyWeightPredicate implements applePredicate {
         @Override
         public boolean test(appleModel apple) {

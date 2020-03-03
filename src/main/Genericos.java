@@ -8,6 +8,12 @@ import java.util.List;
 public class Genericos {
 
     /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private Genericos() {
+    }
+
+    /**
      * Este metodo cumple la funcion de filtrar sin embargo lo puede realizar con cualquier tipo de objeto
      *
      * @param list
@@ -53,14 +59,14 @@ public class Genericos {
      * @param title   se refiere al titulo del ejemplo
      * @param msg     se refiere a una descripcion del ejemplo
      */
-    public static void comentar(String chapter, String title, String msg,String line_break) {
-        if (!chapter.equals("") || !chapter.equals(null)) {
+    public static void comentar(String chapter, String title, String msg, String line_break) {
+        if (!chapter.equals("")) {
             System.out.println(chapter);
         }
-        if (!title.equals("") || !title.equals(null)) {
+        if (!title.equals("")) {
             System.out.println(title);
         }
-        if (!msg.equals("") || !msg.equals(null)) {
+        if (!msg.equals("")) {
             System.out.println(msg);
         }
         System.out.println(line_break);

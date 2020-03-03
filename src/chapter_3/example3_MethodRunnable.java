@@ -7,6 +7,13 @@ import static main.Genericos.process;
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 63
  */
 public class example3_MethodRunnable {
+
+    /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example3_MethodRunnable() {
+    }
+
     /**
      * Este metodo hace uso de lambdas con hilos
      *

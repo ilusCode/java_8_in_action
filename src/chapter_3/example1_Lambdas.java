@@ -13,6 +13,12 @@ import static main.Genericos.comentar;
 public class example1_Lambdas {
 
     /**
+     * Se crean los contructores privados derivado a una recomendacion de Sonar
+     */
+    private example1_Lambdas() {
+    }
+
+    /**
      * este metodo hace uso de los metodos tradicionales
      *
      * @return
