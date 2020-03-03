@@ -13,6 +13,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/Chapter_3_Lambda_expressions.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/chapter_1/data/InventoryData.java">
           <value>
             <set />
@@ -139,6 +144,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/chapter_2/example14_Comparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_2/example15_Thread.java">
           <value>
             <set />
           </value>
@@ -289,6 +299,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/interfaces/comparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/interfaces/runnable.java">
           <value>
             <set />
           </value>

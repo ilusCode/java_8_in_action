@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 52
+ * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 53
  * 2.4.1. Sorting with a Comparator
  */
 public class example14_Comparator {

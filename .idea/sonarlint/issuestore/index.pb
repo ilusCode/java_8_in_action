@@ -1,0 +1,41 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+N
+src/main/model/appleModel.java,4\2\42c434777d31cfd0aeb2c0bf2095fa9849a45e0e
+P
+ src/main/data/inventoryData.java,4\d\4d3911289f96be00237fc5c1e0537b566a619ce3
+U
+%src/main/interfaces/transactions.java,0\0\00bb064f1b66419d1e2f2612a7c9133a41a26aa6
+R
+"src/main/interfaces/predicate.java,f\a\fa235cce96ace0fa98ddf8ec7fea7a92bdfbf497
+W
+'src/main/interfaces/applePredicate.java,f\7\f7e776115e8d13b7936574a42ab5e0763011fb8b
+W
+'src/main/interfaces/appleFormatter.java,6\c\6c7a8a29e82c9ae2ed133555de8f49a81a2d7d79
+S
+#src/main/interfaces/comparator.java,8\8\885081eeeded8ff3d56cc0bf02422cdef1cba846
+P
+ src/chapter_1/example1_Sort.java,5\d\5de0c40b2b90998d7e7fb574b713039c33188cba
+W
+'src/chapter_2/example14_Comparator.java,8\d\8da1506c2366d727f4d67f6a68bb879756cbe2ab
+X
+(src/chapter_2/example13_Parameter_T.java,1\c\1cdbcfce20b00d6d81481c9004c8550398fa4c9f
+d
+4src/chapter_2/example12_Anonymous_Class_Puzzler.java,7\9\79b7f5eef4457b5e4eeb88b05e195f3a0d78bd60
+Z
+*src/chapter_2/example11_AnonymusClass.java,9\6\960cca5cd97fd2f3352d55d19b1918823bae8295
+d
+4src/chapter_2/example5_AppleGreenColorPredicate.java,1\6\16d24dc16bb5ecdc56ef428f10dc7fd01f061a97
+b
+2src/chapter_2/example4_FilterByColorAndWeight.java,b\8\b8467d42907c1b4963d0c593c881a4b03aeb30d2
+Z
+*src/chapter_2/example7_ApplePredicate.java,6\2\627c228663de21dcca3e8875b53e6d3685bb2434
+\
+,src/chapter_2/example9_PrettyPrintApple.java,6\1\61f221b7c7be528007d06c3d3c775e2b37a6f6c9
+e
+5src/chapter_2/example6_AppleHeavyWeightPredicate.java,7\9\79fc33b12d3c46f81d86cda966c9b082e02cba2c
+e
+5src/chapter_2/example8_AppleRedAndHeavyPredicate.java,e\f\ef9a40e836ed005a5ac6040fa97f8240339a3cdf
+f
+6src/chapter_2/example10_ParameterizationFiltering.java,b\5\b5cceebda668685f57618eabbf94885b140c39f2
