@@ -2,11 +2,14 @@ package chapter_2;
 
 import main.data.inventoryData;
 import main.interfaces.applePredicate;
-import main.interfaces.predicate;
+import main.interfaces.funcionales.predicate;
 import main.model.appleModel;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static main.Genericos.comentar;
+import static main.Genericos.creaList;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 41 - 42
@@ -51,10 +54,9 @@ public class example5_AppleGreenColorPredicate implements applePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample5() {
-        System.out.println("Chapther 2");
-        System.out.println("Example #5");
+        comentar("Capitulo 2", "Example #5", "", "--------------------------------");
         inventoryData d = new inventoryData();
-        List<appleModel> list = d.creaList();
+        List<appleModel> list = creaList();
         d.cargarDatos(list);
         example5_AppleGreenColorPredicate e5 = new example5_AppleGreenColorPredicate();
         predicate<appleModel> p = e5::test;

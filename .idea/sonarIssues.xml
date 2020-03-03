@@ -228,12 +228,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example1_Lambdas.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example2_UseLambdas.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example3_InterfaceFunctional.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example3_MethodRunnable.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/interfaces/ApplePredicate.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/Config.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/Genericos.java">
           <value>
             <set />
           </value>
@@ -249,6 +274,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/data/TransactionsData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/data/inventoryData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/data/transactionsData.java">
           <value>
             <set />
           </value>
@@ -299,6 +334,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/interfaces/comparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/interfaces/inventory.java">
           <value>
             <set />
           </value>

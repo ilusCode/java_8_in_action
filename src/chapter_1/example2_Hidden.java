@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileFilter;
 import java.util.Arrays;
 
+import static main.Genericos.comentar;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 24
  * Figure 1.4. Passing the method reference File::isHidden to the method listFiles
@@ -38,8 +40,7 @@ public class example2_Hidden {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample2() {
-        System.out.println("Chapther 1");
-        System.out.println("Example #2");
+        comentar("Capitulo 1", "Example #2", "", "--------------------------------");
         File[] hidden = new File[0];
         hiddenAnt(hidden);
         hiddenAct(hidden);

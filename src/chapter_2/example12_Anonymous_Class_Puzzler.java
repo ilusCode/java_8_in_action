@@ -1,5 +1,7 @@
 package chapter_2;
 
+import static main.Genericos.comentar;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 49
  * Quiz 2.2: Anonymous class puzzler
@@ -35,6 +37,7 @@ public class example12_Anonymous_Class_Puzzler {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample12() {
+        comentar("Capitulo 2", "Example #12", "", "--------------------------------");
         example12_Anonymous_Class_Puzzler class_puzzler = new example12_Anonymous_Class_Puzzler();
         class_puzzler.doIt();
     }

@@ -6,6 +6,9 @@ import main.model.appleModel;
 import java.util.ArrayList;
 import java.util.List;
 
+import static main.Genericos.comentar;
+import static main.Genericos.creaList;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 39
  * 2.1.2. Second attempt: parameterizing the color
@@ -32,10 +35,9 @@ public class example3_FilterByWeight {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample3() {
-        System.out.println("Chapther 2");
-        System.out.println("Example #3");
+        comentar("Capitulo 2", "Example #3", "", "--------------------------------");
         inventoryData d=new inventoryData();
-        List<appleModel> list = d.creaList();
+        List<appleModel> list = creaList();
         d.cargarDatos(list);
         List<appleModel> weightApples = filterApplesByWeight(list, 10);
         d.mostrarList(weightApples);

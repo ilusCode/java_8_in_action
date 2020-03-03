@@ -1,5 +1,7 @@
 package chapter_2;
 
+import static main.Genericos.comentar;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 54
  * 2.4.2. Executing a block of code with Runnable
@@ -37,6 +39,7 @@ public class example15_Thread {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample15() {
+        comentar("Capitulo 2", "Example #15", "", "--------------------------------");
         Thread t1 = createThread();
         Thread t2 = createThreadWithLamnbda();
         t1.start();

@@ -6,6 +6,9 @@ import main.model.appleModel;
 
 import java.util.List;
 
+import static main.Genericos.comentar;
+import static main.Genericos.creaList;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 45
  * Quiz 2.1: Write a flexible prettyPrintApple method
@@ -50,8 +53,9 @@ public class example9_PrettyPrintApple {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample9() {
+        comentar("Capitulo 2", "Example #9", "", "--------------------------------");
         inventoryData d = new inventoryData();
-        List<appleModel> list = d.creaList();
+        List<appleModel> list = creaList();
         d.cargarDatos(list);
         prettyPrintApple(list, new AppleFancyFormatter());
         prettyPrintApple(list, new AppleSimpleFormatter());

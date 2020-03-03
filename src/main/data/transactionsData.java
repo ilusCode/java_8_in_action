@@ -17,15 +17,6 @@ public class transactionsData implements transactions {
     }
 
     /**
-     * este metodo sirve para la creacion de la lista con un modelo transactionModel
-     *
-     * @return regresa una lista con el tipo de modelo asignado
-     */
-    public List<transactionModel> creaList() {
-        return new ArrayList<>();
-    }
-
-    /**
      * este metodo sirve para la asignacion de valores al objeto de la lista
      *
      * @param list

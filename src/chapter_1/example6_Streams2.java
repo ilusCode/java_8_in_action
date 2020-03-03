@@ -6,6 +6,8 @@ import main.model.appleModel;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
+import static main.Genericos.comentar;
+import static main.Genericos.creaList;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 32
@@ -43,10 +45,9 @@ public class example6_Streams2 {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample6() {
-        System.out.println("Chapther 1");
-        System.out.println("Example #6");
+        comentar("Capitulo 1", "Example #6", "", "--------------------------------");
         inventoryData d = new inventoryData();
-        List<appleModel> list = d.creaList();
+        List<appleModel> list = creaList();
         d.cargarDatos(list);
         d.mostrarList(list);
         System.out.println("----------------------------- Sequential Processing -----------------------------");

@@ -7,6 +7,9 @@ import main.model.appleModel;
 import java.util.ArrayList;
 import java.util.List;
 
+import static main.Genericos.comentar;
+import static main.Genericos.creaList;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 43
  * Passing code/behavior
@@ -44,8 +47,9 @@ public class example8_AppleRedAndHeavyPredicate implements applePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample8() {
+        comentar("Capitulo 2", "Example #8", "", "--------------------------------");
         inventoryData d = new inventoryData();
-        List<appleModel> list = d.creaList();
+        List<appleModel> list = creaList();
         d.cargarDatos(list);
         List<appleModel> redAndHeavyApples = filterApples(list, new example8_AppleRedAndHeavyPredicate());
         d.mostrarList(redAndHeavyApples);

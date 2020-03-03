@@ -2,11 +2,14 @@ package chapter_2;
 
 import main.data.inventoryData;
 import main.interfaces.applePredicate;
-import main.interfaces.predicate;
+import main.interfaces.funcionales.predicate;
 import main.model.appleModel;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static main.Genericos.comentar;
+import static main.Genericos.creaList;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 42
@@ -51,10 +54,9 @@ public class example6_AppleHeavyWeightPredicate implements applePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample6() {
-        System.out.println("Chapther 2");
-        System.out.println("Example #6");
+        comentar("Capitulo 2", "Example #6", "", "--------------------------------");
         inventoryData d = new inventoryData();
-        List<appleModel> list = d.creaList();
+        List<appleModel> list = creaList();
         d.cargarDatos(list);
         example6_AppleHeavyWeightPredicate e6 = new example6_AppleHeavyWeightPredicate();
         predicate<appleModel> p = e6::test;

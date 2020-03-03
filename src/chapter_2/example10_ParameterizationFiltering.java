@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static main.Genericos.comentar;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 45
  * Listing 2.1. Behavior parameterization: filtering apples with predicates
@@ -58,6 +60,7 @@ public class example10_ParameterizationFiltering {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample10() {
+        comentar("Capitulo 2", "Example #10", "", "--------------------------------");
         List<appleModel> list = Arrays.asList(
                 new appleModel(12, "Gris", 12),
                 new appleModel(132, "Azul", 121),

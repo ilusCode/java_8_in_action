@@ -6,6 +6,9 @@ import main.model.appleModel;
 import java.util.Comparator;
 import java.util.List;
 
+import static main.Genericos.comentar;
+import static main.Genericos.creaList;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 53
  * 2.4.1. Sorting with a Comparator
@@ -21,8 +24,9 @@ public class example14_Comparator {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample14() {
+        comentar("Capitulo 2", "Example #14", "", "--------------------------------");
         inventoryData d = new inventoryData();
-        List<appleModel> list = d.creaList();
+        List<appleModel> list = creaList();
         d.cargarDatos(list);
         System.out.println("----------------------------- Normal -----------------------------");
         list.sort(new Comparator<appleModel>() {
@@ -35,9 +39,5 @@ public class example14_Comparator {
         System.out.println("----------------------------- Lambda -----------------------------");
         list.sort((appleModel a1, appleModel a2) -> a1.getWeight().compareTo(a2.getWeight()));
         d.mostrarList(list);
-    }
-
-    public static void main(String[] args) {
-        testExample14();
     }
 }

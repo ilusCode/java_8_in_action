@@ -7,17 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class inventoryData implements inventory {
-
-    @Override
-    /**
-     * este metodo sirve para la creacion de la lista con un modelo appleModel
-     *
-     * @return regresa una lista con el tipo de modelo asignado
-     */
-    public List<appleModel> creaList() {
-         return new ArrayList<>();
-    }
-
     @Override
     /**
      * este metodo sirve para la asignacion de valores al objeto de la lista

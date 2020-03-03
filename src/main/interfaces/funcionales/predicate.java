@@ -1,4 +1,4 @@
-package main.interfaces;
+package main.interfaces.funcionales;
 
 @FunctionalInterface
 public interface predicate<T> {
