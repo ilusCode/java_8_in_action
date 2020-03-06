@@ -1,7 +1,7 @@
 package chapter_1;
 
-import main.data.transactionsData;
-import main.model.transactionModel;
+import main.data.TransactionsData;
+import main.model.TransactionModel;
 
 import java.util.*;
 
@@ -28,12 +28,12 @@ public class example5_Streams {
      * @deprecated c esta variable se le asigna la modena que tiene la transaccion que se esta recorriendo
      */
     @Deprecated
-    public static void mapeo(List<transactionModel> transactions) {
-        Map<Currency, List<transactionModel>> transactionsByCurrencies = new HashMap<>();
-        for (transactionModel tr : transactions) {
+    public static void mapeo(List<TransactionModel> transactions) {
+        Map<Currency, List<TransactionModel>> transactionsByCurrencies = new HashMap<>();
+        for (TransactionModel tr : transactions) {
             if (tr.getPrice() < 10) {
                 Currency c = tr.getCurrency();
-                List<transactionModel> transactionsForCurrency = transactionsByCurrencies.get(c);
+                List<TransactionModel> transactionsForCurrency = transactionsByCurrencies.get(c);
                 if (transactionsForCurrency == null) {
                     transactionsForCurrency = new ArrayList<>();
                     transactionsByCurrencies.put(c, transactionsForCurrency);
@@ -50,8 +50,8 @@ public class example5_Streams {
      * @deprecated c esta variable se le asigna la modena que tiene la transaccion que se esta recorriendo
      */
     @Deprecated
-    public static void mapeoStreams(List<transactionModel> transactions) {
-        Map<Currency, List<transactionModel>> transactionsByCurrencies = transactions.stream().filter((transactionModel t) -> t.getPrice() > 15).collect(groupingBy(transactionModel::getCurrency));
+    public static void mapeoStreams(List<TransactionModel> transactions) {
+        Map<Currency, List<TransactionModel>> transactionsByCurrencies = transactions.stream().filter((TransactionModel t) -> t.getPrice() > 15).collect(groupingBy(TransactionModel::getCurrency));
         System.out.println(transactionsByCurrencies.keySet());
     }
 
@@ -62,12 +62,16 @@ public class example5_Streams {
      */
     @Deprecated
     public static void testExample5() {
-        comentar("Capitulo 1", "Example #5", "", "--------------------------------");
-        transactionsData t = new transactionsData();
-        List<transactionModel> transactions = creaList();
+        comentar("Capitulo 1", "Example #5", "");
+        TransactionsData t = new TransactionsData();
+        List<TransactionModel> transactions = creaList();
         t.cargarDatos(transactions);
         t.mostrarList(transactions);
         mapeo(transactions);
         mapeoStreams(transactions);
+    }
+
+    public static void main(String[] args) {
+        testExample5();
     }
 }

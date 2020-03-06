@@ -39,10 +39,14 @@ public class example15_Thread {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample15() {
-        comentar("Capitulo 2", "Example #15", "", "--------------------------------");
+        comentar("Capitulo 2", "Example #15", "");
         Thread t1 = createThread();
         Thread t2 = createThreadWithLamnbda();
         t1.start();
         t2.start();
+    }
+
+    public static void main(String[] args) {
+        testExample15();
     }
 }

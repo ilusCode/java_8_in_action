@@ -1,4 +1,3 @@
 
-dsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(°Ö¢'
-Lsquid:S1068"/Remove this unused "heavyApples" private field.(¾³ò8à¯³é‰.
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕÙßûÿÿÿÿ
+h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(°Ö¢'8—û¿Š.
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕÙßûÿÿÿÿ8—û¿Š.

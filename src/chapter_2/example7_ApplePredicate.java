@@ -1,8 +1,8 @@
 package chapter_2;
 
-import main.data.inventoryData;
+import main.data.InventoryData;
 import main.interfaces.funcionales.Predicate;
-import main.model.appleModel;
+import main.model.AppleModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,9 +29,9 @@ public class example7_ApplePredicate {
      * @param p    p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    static List<appleModel> filterWithPredicate(List<appleModel> list, Predicate p) {
-        List<appleModel> res = new ArrayList<>();
-        for (appleModel a : list) {
+    static List<AppleModel> filterWithPredicate(List<AppleModel> list, Predicate p) {
+        List<AppleModel> res = new ArrayList<>();
+        for (AppleModel a : list) {
             if (p.test(a)) {
                 res.add(a);
             }
@@ -45,7 +45,7 @@ public class example7_ApplePredicate {
      * @param model
      * @return regresa un true or false dependiendo si se cumple la sentencia o no
      */
-    public static boolean test(appleModel model) {
+    public static boolean test(AppleModel model) {
         return "Verde".equals(model.getColor());
     }
 
@@ -53,12 +53,15 @@ public class example7_ApplePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample7() {
-        comentar("Capitulo 2", "Example #7", "", "--------------------------------");
-        inventoryData d = new inventoryData();
-        List<appleModel> list = creaList();
+        comentar("Capitulo 2", "Example #7", "");
+        InventoryData d = new InventoryData();
+        List<AppleModel> list = creaList();
         d.cargarDatos(list);
-        Predicate<appleModel> p = example7_ApplePredicate::test;
+        Predicate<AppleModel> p = example7_ApplePredicate::test;
         d.mostrarList(filterWithPredicate(list, p));
+    }
 
+    public static void main(String[] args) {
+        testExample7();
     }
 }

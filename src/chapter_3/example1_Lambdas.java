@@ -1,6 +1,6 @@
 package chapter_3;
 
-import main.model.appleModel;
+import main.model.AppleModel;
 
 import java.util.Comparator;
 
@@ -23,10 +23,10 @@ public class example1_Lambdas {
      *
      * @return
      */
-    public static Comparator<appleModel> comparator() {
-        return new Comparator<appleModel>() {
+    public static Comparator<AppleModel> comparator() {
+        return new Comparator<AppleModel>() {
             @Override
-            public int compare(appleModel o1, appleModel o2) {
+            public int compare(AppleModel o1, AppleModel o2) {
                 return o1.getWeight().compareTo(o2.getWeight());
             }
         };
@@ -37,16 +37,20 @@ public class example1_Lambdas {
      *
      * @return
      */
-    public static Comparator<appleModel> comparatorWithLambdas() {
-        return (appleModel a1, appleModel a2) -> a1.getWeight().compareTo(a2.getWeight());
+    public static Comparator<AppleModel> comparatorWithLambdas() {
+        return (AppleModel a1, AppleModel a2) -> a1.getWeight().compareTo(a2.getWeight());
     }
 
     /**
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample1() {
-        comentar("Capitulo 3", "Example #1", "", "--------------------------------");
-        Comparator<appleModel> byWeight = comparator();
-        Comparator<appleModel> byLambdas = comparatorWithLambdas();
+        comentar("Capitulo 3", "Example #1", "");
+        Comparator<AppleModel> byWeight = comparator();
+        Comparator<AppleModel> byLambdas = comparatorWithLambdas();
+    }
+
+    public static void main(String[] args) {
+        testExample1();
     }
 }

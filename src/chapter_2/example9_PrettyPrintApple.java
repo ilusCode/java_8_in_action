@@ -1,8 +1,8 @@
 package chapter_2;
 
-import main.data.inventoryData;
+import main.data.InventoryData;
 import main.interfaces.AppleFormatter;
-import main.model.appleModel;
+import main.model.AppleModel;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class example9_PrettyPrintApple {
      * Este metodo sirve para imprimir el color del arreglo que se recorre
      */
     static class AppleFancyFormatter implements AppleFormatter {
-        public String accept(appleModel apple) {
+        public String accept(AppleModel apple) {
             return "Una manzana de color " + apple.getColor();
         }
     }
@@ -34,7 +34,7 @@ public class example9_PrettyPrintApple {
      * Este metodo sirve para imprimir el peso del arreglo que se recorre
      */
     static class AppleSimpleFormatter implements AppleFormatter {
-        public String accept(appleModel apple) {
+        public String accept(AppleModel apple) {
             return "Una manzana de " + apple.getWeight() + "g";
         }
     }
@@ -43,8 +43,8 @@ public class example9_PrettyPrintApple {
      * @param list es un listado donde se esncuetra toda la informacion del arreglo
      * @param format sirve para identificar cual es sentecia por la que se va a imprimir la informacion
      */
-    public static void prettyPrintApple(List<appleModel> list, AppleFormatter format) {
-        for (appleModel apple : list) {
+    public static void prettyPrintApple(List<AppleModel> list, AppleFormatter format) {
+        for (AppleModel apple : list) {
             System.out.println(format.accept(apple));
         }
     }
@@ -53,11 +53,15 @@ public class example9_PrettyPrintApple {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample9() {
-        comentar("Capitulo 2", "Example #9", "", "--------------------------------");
-        inventoryData d = new inventoryData();
-        List<appleModel> list = creaList();
+        comentar("Capitulo 2", "Example #9", "");
+        InventoryData d = new InventoryData();
+        List<AppleModel> list = creaList();
         d.cargarDatos(list);
         prettyPrintApple(list, new AppleFancyFormatter());
         prettyPrintApple(list, new AppleSimpleFormatter());
+    }
+
+    public static void main(String[] args) {
+        testExample9();
     }
 }

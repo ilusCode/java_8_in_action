@@ -9,6 +9,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Genericos {
@@ -38,7 +40,7 @@ public class Genericos {
     }
 
     /**
-     * este metodo sirve para la creacion de la lista con un modelo appleModel
+     * este metodo sirve para la creacion de la lista con un modelo AppleModel
      *
      * @return regresa una lista con el tipo de modelo asignado
      */
@@ -78,7 +80,7 @@ public class Genericos {
      * @param title   se refiere al titulo del ejemplo
      * @param msg     se refiere a una descripcion del ejemplo
      */
-    public static void comentar(String chapter, String title, String msg, String line_break) {
+    public static void comentar(String chapter, String title, String msg) {
         if (!chapter.equals("")) {
             System.out.println(chapter);
         }
@@ -88,11 +90,7 @@ public class Genericos {
         if (!msg.equals("")) {
             System.out.println(msg);
         }
-        if (line_break.equals("default")) {
-            System.out.println("------------------------------");
-        } else {
-            System.out.println("------------------------------");
-        }
+        System.out.println("------------------------------");
     }
 
     /**

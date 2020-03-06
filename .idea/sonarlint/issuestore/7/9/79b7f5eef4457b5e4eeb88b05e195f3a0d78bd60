@@ -1,12 +1,16 @@
 
-gsquid:HiddenFieldCheck"9Rename "value" which hides the field declared at line 23.(ïÕÇúÿÿÿÿ8¦Úúé‰.
-Msquid:S1481"*Remove this unused "value" local variable.(ïÕÇúÿÿÿÿ8¦Úúé‰.
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕÙßûÿÿÿÿ
-?squid:S1170"!Make this final field static too.(€–Àí8Œ˜òé‰.
-bsquid:HiddenFieldCheck"9Rename "value" which hides the field declared at line 15.(â—ìç8¥şì‰.
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ñşÍÏûÿÿÿÿ
-psquid:S00117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÉ„È8Î…ê‰.
-Wsquid:S1854"9Remove this useless assignment to local variable "value".(â—ìç8¦Úúé‰.
-Hsquid:S1481"*Remove this unused "value" local variable.(â—ìç8¥şì‰.
-\squid:S1854"9Remove this useless assignment to local variable "value".(ïÕÇúÿÿÿÿ8¦Úúé‰.
-Dsquid:S1170"!Make this final field static too.(ò»®ùÿÿÿÿ8¦Úúé‰.
+[
+java:S1117"9Rename "value" which hides the field declared at line 25.(ïÕÇúÿÿÿÿ8ª«¿Š.
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕÙßûÿÿÿÿ8ª«¿Š.
+L
+java:S1481"*Remove this unused "value" local variable.(ïÕÇúÿÿÿÿ8ª«¿Š.
+>
+java:S1170"!Make this final field static too.(€–Àí8ª«¿Š.
+G
+java:S1481"*Remove this unused "value" local variable.(â—ìç8ª«¿Š.
+m	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÉ„È8ª«¿Š.
+n	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ñşÍÏûÿÿÿÿ8ª«¿Š.
+C
+java:S1170"!Make this final field static too.(ò»®ùÿÿÿÿ8ª«¿Š.
+V
+java:S1117"9Rename "value" which hides the field declared at line 17.(â—ìç8ª«¿Š.

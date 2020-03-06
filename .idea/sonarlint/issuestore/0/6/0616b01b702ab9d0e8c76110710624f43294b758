@@ -1,0 +1,7 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‰€š—øÿÿÿÿ8¤ËÌ•Š.
+N
+java:S1612",Replace this lambda with a method reference.(ÀÁÅşÿÿÿÿ8Ú¸ö–Š.
+J
+java:S1604;"(Make this anonymous inner class a lambda(ü„ıòøÿÿÿÿ8©şå–Š.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îùŒ şÿÿÿÿ

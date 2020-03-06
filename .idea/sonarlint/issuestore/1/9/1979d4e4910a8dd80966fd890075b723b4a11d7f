@@ -1,0 +1,7 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îùŒ þÿÿÿÿ
+E
+java:S14816"(Remove this unused "sin" local variable.(ÌÛ³ý8šÍÇÀŠ.
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(—œ­þøÿÿÿÿ
+E
+java:S14817"(Remove this unused "con" local variable.(‘§ÍÑ8šÍÇÀŠ.

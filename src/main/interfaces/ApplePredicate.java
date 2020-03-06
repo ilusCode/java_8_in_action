@@ -1,7 +1,7 @@
 package main.interfaces;
 
-import main.model.appleModel;
+import main.model.AppleModel;
 
 public interface ApplePredicate {
-    boolean test(appleModel apple);
+    boolean test(AppleModel apple);
 }

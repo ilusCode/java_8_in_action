@@ -1,8 +1,8 @@
 package chapter_2;
 
-import main.data.inventoryData;
+import main.data.InventoryData;
 import main.interfaces.ApplePredicate;
-import main.model.appleModel;
+import main.model.AppleModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ public class example8_AppleRedAndHeavyPredicate implements ApplePredicate {
     private example8_AppleRedAndHeavyPredicate() {
     }
 
-    public boolean test(appleModel apple) {
+    public boolean test(AppleModel apple) {
         return "Verde".equals(apple.getColor()) && apple.getWeight() > 15;
     }
 
@@ -33,9 +33,9 @@ public class example8_AppleRedAndHeavyPredicate implements ApplePredicate {
      * @param p   p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    public static List<appleModel> filterApples(List<appleModel> inv, ApplePredicate p) {
-        List<appleModel> res = new ArrayList<>();
-        for (appleModel a : inv) {
+    public static List<AppleModel> filterApples(List<AppleModel> inv, ApplePredicate p) {
+        List<AppleModel> res = new ArrayList<>();
+        for (AppleModel a : inv) {
             if (p.test(a)) {
                 res.add(a);
             }
@@ -47,11 +47,15 @@ public class example8_AppleRedAndHeavyPredicate implements ApplePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample8() {
-        comentar("Capitulo 2", "Example #8", "", "--------------------------------");
-        inventoryData d = new inventoryData();
-        List<appleModel> list = creaList();
+        comentar("Capitulo 2", "Example #8", "");
+        InventoryData d = new InventoryData();
+        List<AppleModel> list = creaList();
         d.cargarDatos(list);
-        List<appleModel> redAndHeavyApples = filterApples(list, new example8_AppleRedAndHeavyPredicate());
+        List<AppleModel> redAndHeavyApples = filterApples(list, new example8_AppleRedAndHeavyPredicate());
         d.mostrarList(redAndHeavyApples);
+    }
+
+    public static void main(String[] args) {
+        testExample8();
     }
 }

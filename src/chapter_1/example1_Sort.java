@@ -1,7 +1,7 @@
 package chapter_1;
 
-import main.data.inventoryData;
-import main.model.appleModel;
+import main.data.InventoryData;
+import main.model.AppleModel;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -27,11 +27,11 @@ public class example1_Sort {
      *
      * @param inventory es una lista de datos de una manzana.
      **/
-    public static void sort(List<appleModel> inventory, String argument) {
+    public static void sort(List<AppleModel> inventory, String argument) {
         if (argument.equals("weight")) {
-            Collections.sort(inventory, new Comparator<appleModel>() {
+            Collections.sort(inventory, new Comparator<AppleModel>() {
                 @Override
-                public int compare(appleModel o1, appleModel o2) {
+                public int compare(AppleModel o1, AppleModel o2) {
                     return o1.getWeight().compareTo(o2.getWeight());
                 }
             });
@@ -40,9 +40,9 @@ public class example1_Sort {
         //----------------------------- Color -----------------------------
 
         if (argument.equals("color")) {
-            Collections.sort(inventory, new Comparator<appleModel>() {
+            Collections.sort(inventory, new Comparator<AppleModel>() {
                 @Override
-                public int compare(appleModel o1, appleModel o2) {
+                public int compare(AppleModel o1, AppleModel o2) {
                     return o1.getColor().compareTo(o2.getColor());
                 }
             });
@@ -60,16 +60,20 @@ public class example1_Sort {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample1() {
-        comentar("Capitulo 1", "Example #1", "", "--------------------------------");
-        inventoryData d = new inventoryData();
-        List<appleModel> x = creaList();
+        comentar("Capitulo 1", "Example #1", "");
+        InventoryData d = new InventoryData();
+        List<AppleModel> x = creaList();
         d.cargarDatos(x);
         System.out.println("Antes");
         d.mostrarList(x);
         example1_Sort.sort(x, "color");
         System.out.println("----------------------------------------------------------------------------");
         System.out.println("Ahora");
-        x.sort(comparing(appleModel::getPiece));
+        x.sort(comparing(AppleModel::getPiece));
         d.mostrarList(x);
+    }
+
+    public static void main(String[] args) {
+        testExample1();
     }
 }

@@ -1,7 +1,7 @@
 package chapter_2;
 
-import main.data.inventoryData;
-import main.model.appleModel;
+import main.data.InventoryData;
+import main.model.AppleModel;
 
 import java.util.Comparator;
 import java.util.List;
@@ -24,20 +24,24 @@ public class example14_Comparator {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample14() {
-        comentar("Capitulo 2", "Example #14", "", "--------------------------------");
-        inventoryData d = new inventoryData();
-        List<appleModel> list = creaList();
+        comentar("Capitulo 2", "Example #14", "");
+        InventoryData d = new InventoryData();
+        List<AppleModel> list = creaList();
         d.cargarDatos(list);
         System.out.println("----------------------------- Normal -----------------------------");
-        list.sort(new Comparator<appleModel>() {
+        list.sort(new Comparator<AppleModel>() {
             @Override
-            public int compare(appleModel o1, appleModel o2) {
+            public int compare(AppleModel o1, AppleModel o2) {
                 return o1.getWeight().compareTo(o2.getWeight());
             }
         });
         d.mostrarList(list);
         System.out.println("----------------------------- Lambda -----------------------------");
-        list.sort((appleModel a1, appleModel a2) -> a1.getWeight().compareTo(a2.getWeight()));
+        list.sort((AppleModel a1, AppleModel a2) -> a1.getWeight().compareTo(a2.getWeight()));
         d.mostrarList(list);
+    }
+
+    public static void main(String[] args) {
+        testExample14();
     }
 }

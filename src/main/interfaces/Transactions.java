@@ -1,15 +1,15 @@
 package main.interfaces;
 
-import main.model.transactionModel;
+import main.model.TransactionModel;
 
 import java.util.Currency;
 import java.util.List;
 
 public interface Transactions {
 
-    boolean llenarList(List<transactionModel> list, int price, Currency currency);
+    boolean llenarList(List<TransactionModel> list, int price, Currency currency);
 
-    void cargarDatos(List<transactionModel> list);
+    void cargarDatos(List<TransactionModel> list);
 
-    void mostrarList(List<transactionModel> list);
+    void mostrarList(List<TransactionModel> list);
 }

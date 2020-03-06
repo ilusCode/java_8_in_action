@@ -1,11 +1,11 @@
 package main.data;
 
 import main.interfaces.Inventory;
-import main.model.appleModel;
+import main.model.AppleModel;
 
 import java.util.List;
 
-public class inventoryData implements Inventory {
+public class InventoryData implements Inventory {
     @Override
     /**
      * este metodo sirve para la asignacion de valores al objeto de la lista
@@ -16,8 +16,8 @@ public class inventoryData implements Inventory {
      * @param pieces
      * @return regresa una lista llena con los objetos que se les paso como parametros
      */
-    public boolean llenarList(List<appleModel> list, int weight, String color, int pieces) {
-        appleModel a = new appleModel();
+    public boolean llenarList(List<AppleModel> list, int weight, String color, int pieces) {
+        AppleModel a = new AppleModel();
         a.setWeight(weight);
         a.setColor(color);
         a.setPiece(pieces);
@@ -28,9 +28,9 @@ public class inventoryData implements Inventory {
     /**
      * este metodo sirve para el llenado de una lista de forma manual
      *
-     * @param list es la lista a llenar con el modelo de appleModel
+     * @param list es la lista a llenar con el modelo de AppleModel
      */
-    public void cargarDatos(List<appleModel> list) {
+    public void cargarDatos(List<AppleModel> list) {
         llenarList(list, 21, "Azul", 12);
         llenarList(list, 23, "Amarilla", 12);
         llenarList(list, 43, "Roja", 3);
@@ -44,8 +44,8 @@ public class inventoryData implements Inventory {
      *
      * @param list
      */
-    public void mostrarList(List<appleModel> list) {
-        for (appleModel x : list) {
+    public void mostrarList(List<AppleModel> list) {
+        for (AppleModel x : list) {
             System.out.println(x.getWeight() + " - " + x.getColor() + " - " + x.getPiece());
         }
     }

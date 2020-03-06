@@ -1,9 +1,9 @@
 package chapter_2;
 
-import main.data.inventoryData;
+import main.data.InventoryData;
 import main.interfaces.ApplePredicate;
 import main.interfaces.funcionales.Predicate;
-import main.model.appleModel;
+import main.model.AppleModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class example5_AppleGreenColorPredicate implements ApplePredicate {
      * @param model
      * @return regresa un true or false dependiendo si se cumple la sentencia o no
      */
-    public boolean test(appleModel model) {
+    public boolean test(AppleModel model) {
         return model.getWeight() > 15;
     }
 
@@ -40,9 +40,9 @@ public class example5_AppleGreenColorPredicate implements ApplePredicate {
      * @param p    p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    static List<appleModel> filterWhitePredicate(List<appleModel> list, Predicate<appleModel> p) {
-        List<appleModel> res = new ArrayList<>();
-        for (appleModel a : list) {
+    static List<AppleModel> filterWhitePredicate(List<AppleModel> list, Predicate<AppleModel> p) {
+        List<AppleModel> res = new ArrayList<>();
+        for (AppleModel a : list) {
             if (p.test(a)) {
                 res.add(a);
             }
@@ -54,12 +54,16 @@ public class example5_AppleGreenColorPredicate implements ApplePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample5() {
-        comentar("Capitulo 2", "Example #5", "", "--------------------------------");
-        inventoryData d = new inventoryData();
-        List<appleModel> list = creaList();
+        comentar("Capitulo 2", "Example #5", "");
+        InventoryData d = new InventoryData();
+        List<AppleModel> list = creaList();
         d.cargarDatos(list);
         example5_AppleGreenColorPredicate e5 = new example5_AppleGreenColorPredicate();
-        Predicate<appleModel> p = e5::test;
+        Predicate<AppleModel> p = e5::test;
         d.mostrarList(filterWhitePredicate(list, p));
+    }
+
+    public static void main(String[] args) {
+        testExample5();
     }
 }

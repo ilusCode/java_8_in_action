@@ -47,20 +47,22 @@ public class example7_Consumer {
         });
     }
 
+    /**
+     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     */
     public static void testExample7() {
-        comentar("Capitulo 3", "Ejemplo 7", "", "default");
+        comentar("Capitulo 3", "Ejemplo 7", "");
         List<Integer> l = creaList();
         l.add(1);
         l.add(2);
         l.add(3);
         l.add(4);
         accept(l, useLambda(l));
-        comentar("", "", "", "default");
+        comentar("", "", "");
         implementacionDirecta(l);
-        comentar("", "", "", "default");
+        comentar("", "", "");
         mostrarDirectamentes(l);
     }
-
     public static void main(String[] args) {
         testExample7();
     }

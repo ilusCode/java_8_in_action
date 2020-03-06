@@ -3,6 +3,7 @@ package chapter_3;
 import java.io.BufferedReader;
 import java.io.IOException;
 
+import static main.Genericos.comentar;
 import static main.Genericos.processFile;
 
 /**
@@ -35,7 +36,12 @@ public class example5_BufferedReaader2 {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample5() throws IOException {
+        comentar("Capitulo 6", "Ejemplo #5", "");
         System.out.println(oneLine());
         System.out.println(twoLine());
+    }
+
+    public static void main(String[] args) throws IOException {
+        testExample5();
     }
 }

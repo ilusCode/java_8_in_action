@@ -17,6 +17,7 @@ public class example6_UsePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample6() {
+        comentar("Capitulo 3", "Ejemplo #6", "");
         List<String> list = creaList();
         list.add("cadena #1");
         list.add("cadena #2");
@@ -26,5 +27,8 @@ public class example6_UsePredicate {
         Predicate<String> validIsEmpty = (String s) -> !s.isEmpty();
         List<String> nonEmpty = filter(list, validIsEmpty);
         mostrarList(nonEmpty);
+    }
+    public static void main(String[] args) {
+        testExample6();
     }
 }

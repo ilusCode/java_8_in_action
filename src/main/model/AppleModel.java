@@ -1,20 +1,20 @@
 package main.model;
 
 /**
- * en esta clase se encuentra la estructura de appleModel
+ * en esta clase se encuentra la estructura de AppleModel
  */
-public class appleModel {
+public class AppleModel {
     private Integer weight;
     private String color;
     private Integer piece;
 
-    public appleModel() {
+    public AppleModel() {
         this.weight = 0;
         this.color = "";
         this.piece = 0;
     }
 
-    public appleModel(Integer weight, String color, int piece) {
+    public AppleModel(Integer weight, String color, int piece) {
         this.weight = weight;
         this.color = color;
         this.piece = piece;

@@ -1,7 +1,7 @@
 package main.interfaces;
 
-import main.model.appleModel;
+import main.model.AppleModel;
 
 public interface AppleFormatter {
-    String accept(appleModel a);
+    String accept(AppleModel a);
 }

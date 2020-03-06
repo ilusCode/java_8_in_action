@@ -1,7 +1,7 @@
 package chapter_1;
 
-import main.data.inventoryData;
-import main.model.appleModel;
+import main.data.InventoryData;
+import main.model.AppleModel;
 
 import java.util.List;
 
@@ -25,15 +25,19 @@ public class example4_FilterLambdas {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample4() {
-        comentar("Capitulo 1", "Example #4", "", "--------------------------------");
-        inventoryData d = new inventoryData();
-        List<appleModel> inv = creaList();
+        comentar("Capitulo 1", "Example #4", "");
+        InventoryData d = new InventoryData();
+        List<AppleModel> inv = creaList();
         d.cargarDatos(inv);
         System.out.println("Sentencia #1 peso menor a 15");
-        d.mostrarList(filterApples(inv, (appleModel a) -> a.getWeight() < 15));
+        d.mostrarList(filterApples(inv, (AppleModel a) -> a.getWeight() < 15));
         System.out.println("Sentencia #2 peso menor a 15 o que el color sea azul");
-        d.mostrarList(filterApples(inv, (appleModel a) -> a.getWeight() < 15 || ("azul".equals(a.getColor()) || "Azul".equals(a.getColor()))));
+        d.mostrarList(filterApples(inv, (AppleModel a) -> a.getWeight() < 15 || ("azul".equals(a.getColor()) || "Azul".equals(a.getColor()))));
         System.out.println("Sentencia #3 el color debe de ser rojo");
-        d.mostrarList(filterApples(inv, (appleModel a) -> "roja".equals(a.getColor()) || "Roja".equals(a.getColor())));
+        d.mostrarList(filterApples(inv, (AppleModel a) -> "roja".equals(a.getColor()) || "Roja".equals(a.getColor())));
+    }
+
+    public static void main(String[] args) {
+        testExample4();
     }
 }

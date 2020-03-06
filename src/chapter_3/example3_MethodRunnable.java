@@ -41,11 +41,15 @@ public class example3_MethodRunnable {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample3() {
-        comentar("Capilulo 3", "Example #3", "Distinta implementacion de hilos", "--------------------------------");
+        comentar("Capilulo 3", "Example #3", "Distinta implementacion de hilos");
         Runnable r1 = useLambda();
         Runnable r2 = anonumusClass();
         process(r1);
         process(r2);
         process(() -> System.out.println("lambda directo"));
+    }
+
+    public static void main(String[] args) {
+        testExample3();
     }
 }

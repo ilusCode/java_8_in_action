@@ -40,10 +40,14 @@ public class example2_Hidden {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample2() {
-        comentar("Capitulo 1", "Example #2", "", "--------------------------------");
+        comentar("Capitulo 1", "Example #2", "");
         File[] hidden = new File[0];
         hiddenAnt(hidden);
         hiddenAct(hidden);
         mostrarhidden(hidden);
+    }
+
+    public static void main(String[] args) {
+        testExample2();
     }
 }

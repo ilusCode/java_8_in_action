@@ -1,7 +1,7 @@
 package chapter_2;
 
-import main.data.inventoryData;
-import main.model.appleModel;
+import main.data.InventoryData;
+import main.model.AppleModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,9 +21,9 @@ public class example2_FilterByColor {
     private example2_FilterByColor() {
     }
 
-    public static List<appleModel> filterApplesByColor(List<appleModel> list, String color) {
-        List<appleModel> res = new ArrayList<>();
-        for (appleModel am : list) {
+    public static List<AppleModel> filterApplesByColor(List<AppleModel> list, String color) {
+        List<AppleModel> res = new ArrayList<>();
+        for (AppleModel am : list) {
             if (am.getColor().equals(color)) {
                 res.add(am);
             }
@@ -35,13 +35,17 @@ public class example2_FilterByColor {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample2() {
-        comentar("Capitulo 2", "Example #2", "", "--------------------------------");
-        inventoryData d = new inventoryData();
-        List<appleModel> list = creaList();
+        comentar("Capitulo 2", "Example #2", "");
+        InventoryData d = new InventoryData();
+        List<AppleModel> list = creaList();
         d.cargarDatos(list);
-        List<appleModel> greenApples = filterApplesByColor(list, "Verde");
+        List<AppleModel> greenApples = filterApplesByColor(list, "Verde");
         d.mostrarList(greenApples);
-        List<appleModel> redApples = filterApplesByColor(list, "Roja");
+        List<AppleModel> redApples = filterApplesByColor(list, "Roja");
         d.mostrarList(redApples);
+    }
+
+    public static void main(String[] args) {
+        testExample2();
     }
 }

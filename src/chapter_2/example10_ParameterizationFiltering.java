@@ -1,8 +1,8 @@
 package chapter_2;
 
-import main.data.inventoryData;
+import main.data.InventoryData;
 import main.interfaces.ApplePredicate;
-import main.model.appleModel;
+import main.model.AppleModel;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,14 +25,14 @@ public class example10_ParameterizationFiltering {
 
     static class AppleHeavyWeightPredicate implements ApplePredicate {
         @Override
-        public boolean test(appleModel apple) {
+        public boolean test(AppleModel apple) {
             return apple.getWeight() > 10;
         }
     }
 
     static class AppleGrayColorPredicate implements ApplePredicate {
         @Override
-        public boolean test(appleModel apple) {
+        public boolean test(AppleModel apple) {
             return "Gris".equals(apple.getColor());
         }
     }
@@ -44,9 +44,9 @@ public class example10_ParameterizationFiltering {
      * @param p   p.test comprueba si la sentencia es cumplida o no retornando un true o false
      * @return regresa una lista de datos con los datos que cumplen la sentencia as
      */
-    public static List<appleModel> filterApples(List<appleModel> inv, ApplePredicate p) {
-        List<appleModel> res = new ArrayList<>();
-        for (appleModel a : inv) {
+    public static List<AppleModel> filterApples(List<AppleModel> inv, ApplePredicate p) {
+        List<AppleModel> res = new ArrayList<>();
+        for (AppleModel a : inv) {
             if (p.test(a)) {
                 res.add(a);
             }
@@ -58,18 +58,21 @@ public class example10_ParameterizationFiltering {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample10() {
-        comentar("Capitulo 2", "Example #10", "", "--------------------------------");
-        List<appleModel> list = Arrays.asList(
-                new appleModel(12, "Gris", 12),
-                new appleModel(132, "Azul", 121),
-                new appleModel(19, "Roja", 1));
-        inventoryData d = new inventoryData();
+        comentar("Capitulo 2", "Example #10", "");
+        List<AppleModel> list = Arrays.asList(
+                new AppleModel(12, "Gris", 12),
+                new AppleModel(132, "Azul", 121),
+                new AppleModel(19, "Roja", 1));
+        InventoryData d = new InventoryData();
         System.out.println("--------------------------- AppleGrayColorPredicate ---------------------------");
-        List<appleModel> heavyApples = filterApples(list, new AppleGrayColorPredicate());
+        List<AppleModel> heavyApples = filterApples(list, new AppleGrayColorPredicate());
         d.mostrarList(heavyApples);
         System.out.println("--------------------------- AppleHeavyWeight Predicate ---------------------------");
-        List<appleModel> greenApples = filterApples(list, new AppleHeavyWeightPredicate());
+        List<AppleModel> greenApples = filterApples(list, new AppleHeavyWeightPredicate());
         d.mostrarList(greenApples);
     }
 
+    public static void main(String[] args) {
+        testExample10();
+    }
 }

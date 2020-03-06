@@ -1,4 +1,5 @@
 
-Ksquid:S1604"(Make this anonymous inner class a lambda(˜å×Úùÿÿÿÿ8€ªôì‰.
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕÙßûÿÿÿÿ
-dsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§µ¯N
+J
+java:S1604 "(Make this anonymous inner class a lambda(Óâ¤Üûÿÿÿÿ8ì›¿Š.
+h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§µ¯N8ì›¿Š.
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÕÙßûÿÿÿÿ8ì›¿Š.

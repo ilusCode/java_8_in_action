@@ -1,18 +1,18 @@
 package main.data;
 
 import main.interfaces.Transactions;
-import main.model.transactionModel;
+import main.model.TransactionModel;
 
 import java.util.Currency;
 import java.util.List;
 import java.util.Locale;
 
-public class transactionsData implements Transactions {
+public class TransactionsData implements Transactions {
 
     /**
      * Se crean los contructores privados derivado a una recomendacion de Sonar
      */
-    public transactionsData() {
+    public TransactionsData() {
     }
 
     /**
@@ -23,8 +23,8 @@ public class transactionsData implements Transactions {
      * @param currency
      * @return regresa una lista llena con los objetos que se les paso como parametros
      */
-    public boolean llenarList(List<transactionModel> list, int price, Currency currency) {
-        transactionModel t = new transactionModel();
+    public boolean llenarList(List<TransactionModel> list, int price, Currency currency) {
+        TransactionModel t = new TransactionModel();
         t.setPrice(price);
         t.setCurrency(currency);
         return list.add(t);
@@ -33,9 +33,9 @@ public class transactionsData implements Transactions {
     /**
      * este metodo sirve para el llenado de una lista de forma manual
      *
-     * @param list es la lista a llenar con el modelo de transactionModel
+     * @param list es la lista a llenar con el modelo de TransactionModel
      */
-    public void cargarDatos(List<transactionModel> list) {
+    public void cargarDatos(List<TransactionModel> list) {
         llenarList(list, 21, Currency.getInstance(Locale.CHINA));
         llenarList(list, 23, Currency.getInstance(Locale.TAIWAN));
         llenarList(list, 43, Currency.getInstance(Locale.FRANCE));
@@ -48,8 +48,8 @@ public class transactionsData implements Transactions {
      *
      * @param list
      */
-    public void mostrarList(List<transactionModel> list) {
-        for (transactionModel tm : list) {
+    public void mostrarList(List<TransactionModel> list) {
+        for (TransactionModel tm : list) {
             System.out.println(tm.getPrice() + " - " + tm.getCurrency());
         }
     }

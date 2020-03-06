@@ -1,7 +1,7 @@
 package chapter_2;
 
-import main.data.inventoryData;
-import main.model.appleModel;
+import main.data.InventoryData;
+import main.model.AppleModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,12 +24,12 @@ public class example13_Parameter_T {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample13() {
-        comentar("Capitulo 2", "Example #13", "", "--------------------------------");
-        inventoryData d = new inventoryData();
-        List<appleModel> list = creaList();
+        comentar("Capitulo 2", "Example #13", "");
+        InventoryData d = new InventoryData();
+        List<AppleModel> list = creaList();
         d.cargarDatos(list);
         System.out.println("-------------------------- RedApples --------------------------");
-        List<appleModel> redApples = filter(list, (appleModel am) -> "Roja".equals(am.getColor()));
+        List<AppleModel> redApples = filter(list, (AppleModel am) -> "Roja".equals(am.getColor()));
         d.mostrarList(redApples);
         System.out.println("-------------------------- Integer --------------------------");
         List<Integer> number = new ArrayList<>();
@@ -43,5 +43,9 @@ public class example13_Parameter_T {
         for (Integer i : evenNumber) {
             System.out.println(i.toString());
         }
+    }
+
+    public static void main(String[] args) {
+        testExample13();
     }
 }

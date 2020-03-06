@@ -238,6 +238,41 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example10_ExceptionsLambdasFunctionalInterface.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example11_Deconstruction.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example12_SameLambda.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example13_DiamondOperator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example14_TypeInference.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example15_VariablesLocales.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example16_MethodReferences.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/chapter_3/example1_Lambdas.java">
           <value>
             <set />
@@ -289,6 +324,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/chapter_3/example8_Function.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example9_IntPredicate.java">
           <value>
             <set />
           </value>
@@ -399,6 +439,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/interfaces/funcionales/Function.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/interfaces/funcionales/IntPredicate.java">
           <value>
             <set />
           </value>
