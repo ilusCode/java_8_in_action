@@ -27,10 +27,10 @@ public class example13_Parameter_T {
         comentar("Capitulo 2", "Example #13", "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = creaList();
-        d.cargarDatos(list);
+        d.loadData(list);
         System.out.println("-------------------------- RedApples --------------------------");
-        List<AppleModel> redApples = filter(list, (AppleModel am) -> "Roja".equals(am.getColor()));
-        d.mostrarList(redApples);
+        List<AppleModel> redApples = filterMod(list, (AppleModel am) -> "Roja".equals(am.getColor()));
+        showListMod(redApples);
         System.out.println("-------------------------- Integer --------------------------");
         List<Integer> number = new ArrayList<>();
         number.add(1);
@@ -39,7 +39,7 @@ public class example13_Parameter_T {
         number.add(4);
         number.add(5);
         number.add(6);
-        List<Integer> evenNumber = filter(number, (Integer i) -> i % 2 == 0);
+        List<Integer> evenNumber = filterMod(number, (Integer i) -> i % 2 == 0);
         for (Integer i : evenNumber) {
             System.out.println(i.toString());
         }

@@ -6,8 +6,7 @@ import main.model.AppleModel;
 import java.util.Comparator;
 import java.util.List;
 
-import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 53
@@ -27,7 +26,7 @@ public class example14_Comparator {
         comentar("Capitulo 2", "Example #14", "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = creaList();
-        d.cargarDatos(list);
+        d.loadData(list);
         System.out.println("----------------------------- Normal -----------------------------");
         list.sort(new Comparator<AppleModel>() {
             @Override
@@ -35,10 +34,10 @@ public class example14_Comparator {
                 return o1.getWeight().compareTo(o2.getWeight());
             }
         });
-        d.mostrarList(list);
+        showListMod(list);
         System.out.println("----------------------------- Lambda -----------------------------");
         list.sort((AppleModel a1, AppleModel a2) -> a1.getWeight().compareTo(a2.getWeight()));
-        d.mostrarList(list);
+        showListMod(list);
     }
 
     public static void main(String[] args) {

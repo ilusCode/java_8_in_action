@@ -39,7 +39,7 @@ public class example14_TypeInference {
      * @return
      */
     private static List<AppleModel> omittedParameter(List<AppleModel> list) {
-        return filter(list, a -> "Verde".equals(a.getColor()));
+        return filterMod(list, a -> "Verde".equals(a.getColor()));
     }
 
     /**
@@ -49,8 +49,8 @@ public class example14_TypeInference {
         comentar("Capitulo 3", "Ejemplo 14", "");
         List<AppleModel> list = creaList();
         InventoryData d = new InventoryData();
-        d.cargarDatos(list);
-        d.mostrarList(omittedParameter(list));
+        d.loadData(list);
+        showListMod(omittedParameter(list));
         Comparator<AppleModel> sin = withoutInference();
         Comparator<AppleModel> con = withInference();
     }

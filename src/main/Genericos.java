@@ -3,15 +3,14 @@ package main;
 import main.interfaces.funcionales.BufferedReaderProcessor;
 import main.interfaces.funcionales.Consumer;
 import main.interfaces.funcionales.Function;
-import main.interfaces.funcionales.Predicate;
+import main.model.AppleModel;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Genericos {
 
@@ -29,8 +28,26 @@ public class Genericos {
      * @param <T>  se refiere a un objeto generico
      * @return
      */
-    public static <T> List<T> filter(List<T> list, Predicate<T> p) {
-        List<T> res = new ArrayList<>();
+    public static <T> List<T> filterMod(List<T> list, main.interfaces.funcionales.Predicate<T> p) {
+        List<T> res = creaList();
+        for (T e : list) {
+            if (p.test(e)) {
+                res.add(e);
+            }
+        }
+        return res;
+    }
+
+    /**
+     * Este metodo cumple la funcion de filtrar sin embargo lo puede realizar con cualquier tipo de objeto
+     *
+     * @param list
+     * @param p
+     * @param <T>  se refiere a un objeto generico
+     * @return
+     */
+    public static <T> List<T> filterGen(List<T> list, Predicate<T> p) {
+        List<T> res = creaList();
         for (T e : list) {
             if (p.test(e)) {
                 res.add(e);
@@ -67,9 +84,20 @@ public class Genericos {
      *
      * @param list
      */
-    public static <T> void mostrarList(List<T> list) {
+    public static <T> void showListGen(List<T> list) {
         for (T x : list) {
             System.out.println(x.toString());
+        }
+    }
+
+    /**
+     * este metodo sirve para realizar una impresion de una lista
+     *
+     * @param list
+     */
+    public static void showListMod(List<AppleModel> list) {
+        for (AppleModel x : list) {
+            System.out.println(x.getWeight() + " - " + x.getColor() + " - " + x.getPiece());
         }
     }
 

@@ -77,13 +77,13 @@ public class example8_Function {
         list.add("8");
         list.add("in");
         list.add("Action");
-        mostrarList(anonymusClass(list));
+        showListGen(anonymusClass(list));
         comentar("", "", "");
-        mostrarList(sinSentencia(list));
+        showListGen(sinSentencia(list));
         comentar("", "", "");
-        mostrarList(sinSentenciaLambda(list));
+        showListGen(sinSentenciaLambda(list));
         comentar("", "", "");
-        mostrarList(useLambda(list));
+        showListGen(useLambda(list));
     }
 
     public static void main(String[] args) {

@@ -8,8 +8,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import static java.util.Comparator.comparing;
-import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 12
@@ -23,7 +22,8 @@ public class example1_Sort {
     }
 
     /**
-     * Este metodo sirve para optimizar el algoritmo de ordenamiento burbuja, en donde se le indica bajo que argumento va hacer el ordenamiento.
+     * Este metodo sirve para optimizar el algoritmo de ordenamiento burbuja, en donde se le indica bajo que
+     * argumento va hacer el ordenamiento.
      *
      * @param inventory es una lista de datos de una manzana.
      **/
@@ -63,14 +63,14 @@ public class example1_Sort {
         comentar("Capitulo 1", "Example #1", "");
         InventoryData d = new InventoryData();
         List<AppleModel> x = creaList();
-        d.cargarDatos(x);
+        d.loadData(x);
         System.out.println("Antes");
-        d.mostrarList(x);
+        showListMod(x);
         example1_Sort.sort(x, "color");
         System.out.println("----------------------------------------------------------------------------");
         System.out.println("Ahora");
         x.sort(comparing(AppleModel::getPiece));
-        d.mostrarList(x);
+        showListMod(x);
     }
 
     public static void main(String[] args) {

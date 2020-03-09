@@ -16,7 +16,7 @@ public class InventoryData implements Inventory {
      * @param pieces
      * @return regresa una lista llena con los objetos que se les paso como parametros
      */
-    public boolean llenarList(List<AppleModel> list, int weight, String color, int pieces) {
+    public boolean loadListMod(List<AppleModel> list, int weight, String color, int pieces) {
         AppleModel a = new AppleModel();
         a.setWeight(weight);
         a.setColor(color);
@@ -30,24 +30,12 @@ public class InventoryData implements Inventory {
      *
      * @param list es la lista a llenar con el modelo de AppleModel
      */
-    public void cargarDatos(List<AppleModel> list) {
-        llenarList(list, 21, "Azul", 12);
-        llenarList(list, 23, "Amarilla", 12);
-        llenarList(list, 43, "Roja", 3);
-        llenarList(list, 12, "Verde", 21);
-        llenarList(list, 53, "Verde", 133);
+    public void loadData(List<AppleModel> list) {
+        loadListMod(list, 21, "Azul", 12);
+        loadListMod(list, 21, "Negra", 12);
+        loadListMod(list, 23, "Amarilla", 12);
+        loadListMod(list, 43, "Roja", 3);
+        loadListMod(list, 12, "Verde", 21);
+        loadListMod(list, 53, "Verde", 133);
     }
-
-    @Override
-    /**
-     * este metodo sirve para realizar una impresion de una lista
-     *
-     * @param list
-     */
-    public void mostrarList(List<AppleModel> list) {
-        for (AppleModel x : list) {
-            System.out.println(x.getWeight() + " - " + x.getColor() + " - " + x.getPiece());
-        }
-    }
-
 }

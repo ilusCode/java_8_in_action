@@ -3,7 +3,7 @@ package main.model;
 /**
  * en esta clase se encuentra la estructura de AppleModel
  */
-public class AppleModel {
+public class AppleModel extends FruitModel {
     private Integer weight;
     private String color;
     private Integer piece;
@@ -14,7 +14,20 @@ public class AppleModel {
         this.piece = 0;
     }
 
-    public AppleModel(Integer weight, String color, int piece) {
+    public AppleModel(String color) {
+        this.color = color;
+    }
+
+    public AppleModel(Integer weight, String color) {
+        this.color = color;
+        this.weight = weight;
+    }
+
+    public AppleModel(Integer weight) {
+        this.weight = weight;
+    }
+
+    public AppleModel(Integer weight, String color, Integer piece) {
         this.weight = weight;
         this.color = color;
         this.piece = piece;

@@ -26,9 +26,9 @@ public class example2_UseLambdas {
         comentar("Capitulo 3", "Example #2", "");
         List<AppleModel> list = creaList();
         InventoryData d = new InventoryData();
-        d.cargarDatos(list);
-        List<AppleModel> lFilter = filter(list, (AppleModel am) -> "Verde".equals(am.getColor()));
-        d.mostrarList(lFilter);
+        d.loadData(list);
+        List<AppleModel> lFilter = filterMod(list, (AppleModel am) -> "Verde".equals(am.getColor()));
+        showListMod(lFilter);
     }
     public static void main(String[] args) {
         testExample2();

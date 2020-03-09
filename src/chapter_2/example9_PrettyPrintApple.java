@@ -56,7 +56,7 @@ public class example9_PrettyPrintApple {
         comentar("Capitulo 2", "Example #9", "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = creaList();
-        d.cargarDatos(list);
+        d.loadData(list);
         prettyPrintApple(list, new AppleFancyFormatter());
         prettyPrintApple(list, new AppleSimpleFormatter());
     }

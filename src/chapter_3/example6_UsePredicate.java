@@ -25,8 +25,8 @@ public class example6_UsePredicate {
         list.add("cadena #4");
         list.add("cadena #5");
         Predicate<String> validIsEmpty = (String s) -> !s.isEmpty();
-        List<String> nonEmpty = filter(list, validIsEmpty);
-        mostrarList(nonEmpty);
+        List<String> nonEmpty = filterMod(list, validIsEmpty);
+        showListGen(nonEmpty);
     }
     public static void main(String[] args) {
         testExample6();

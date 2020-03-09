@@ -7,8 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import static java.util.Comparator.comparing;
-import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 82
@@ -19,13 +18,16 @@ public class example16_MethodReferences {
         testExample16();
     }
 
+    /**
+     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     */
     public static void testExample16() {
         comentar("Capitulo 3", "Ejemplo 16", "");
         List<AppleModel> list = creaList();
         InventoryData d = new InventoryData();
-        d.cargarDatos(list);
+        d.loadData(list);
         list.sort(comparing(AppleModel::getWeight));
-        d.mostrarList(list);
+        showListMod(list);
         comentar("", "", "");
         /**
          * anonumusClass
@@ -36,6 +38,6 @@ public class example16_MethodReferences {
                 return o1.getWeight().compareTo(o2.getWeight());
             }
         });
-        d.mostrarList(list);
+        showListMod(list);
     }
 }

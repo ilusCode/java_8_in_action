@@ -7,8 +7,7 @@ import main.model.AppleModel;
 import java.util.ArrayList;
 import java.util.List;
 
-import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 42
@@ -56,9 +55,9 @@ public class example7_ApplePredicate {
         comentar("Capitulo 2", "Example #7", "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = creaList();
-        d.cargarDatos(list);
+        d.loadData(list);
         Predicate<AppleModel> p = example7_ApplePredicate::test;
-        d.mostrarList(filterWithPredicate(list, p));
+        showListMod(filterWithPredicate(list, p));
     }
 
     public static void main(String[] args) {

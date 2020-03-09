@@ -8,8 +8,7 @@ import main.model.AppleModel;
 import java.util.ArrayList;
 import java.util.List;
 
-import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 41 - 42
@@ -57,10 +56,10 @@ public class example5_AppleGreenColorPredicate implements ApplePredicate {
         comentar("Capitulo 2", "Example #5", "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = creaList();
-        d.cargarDatos(list);
+        d.loadData(list);
         example5_AppleGreenColorPredicate e5 = new example5_AppleGreenColorPredicate();
         Predicate<AppleModel> p = e5::test;
-        d.mostrarList(filterWhitePredicate(list, p));
+        showListMod(filterWhitePredicate(list, p));
     }
 
     public static void main(String[] args) {

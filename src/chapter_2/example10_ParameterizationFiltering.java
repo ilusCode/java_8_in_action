@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static main.Genericos.comentar;
+import static main.Genericos.showListMod;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 45
@@ -66,10 +67,10 @@ public class example10_ParameterizationFiltering {
         InventoryData d = new InventoryData();
         System.out.println("--------------------------- AppleGrayColorPredicate ---------------------------");
         List<AppleModel> heavyApples = filterApples(list, new AppleGrayColorPredicate());
-        d.mostrarList(heavyApples);
+        showListMod(heavyApples);
         System.out.println("--------------------------- AppleHeavyWeight Predicate ---------------------------");
         List<AppleModel> greenApples = filterApples(list, new AppleHeavyWeightPredicate());
-        d.mostrarList(greenApples);
+        showListMod(greenApples);
     }
 
     public static void main(String[] args) {

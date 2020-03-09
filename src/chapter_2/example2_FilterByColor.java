@@ -6,8 +6,7 @@ import main.model.AppleModel;
 import java.util.ArrayList;
 import java.util.List;
 
-import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 39
@@ -38,11 +37,11 @@ public class example2_FilterByColor {
         comentar("Capitulo 2", "Example #2", "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = creaList();
-        d.cargarDatos(list);
+        d.loadData(list);
         List<AppleModel> greenApples = filterApplesByColor(list, "Verde");
-        d.mostrarList(greenApples);
+        showListMod(greenApples);
         List<AppleModel> redApples = filterApplesByColor(list, "Roja");
-        d.mostrarList(redApples);
+        showListMod(redApples);
     }
 
     public static void main(String[] args) {

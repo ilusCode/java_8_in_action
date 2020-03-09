@@ -6,8 +6,7 @@ import main.model.AppleModel;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
-import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 32
@@ -48,14 +47,14 @@ public class example6_Streams2 {
         comentar("Capitulo 1", "Example #6", "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = creaList();
-        d.cargarDatos(list);
-        d.mostrarList(list);
+        d.loadData(list);
+        showListMod(list);
         System.out.println("----------------------------- Sequential Processing -----------------------------");
         List<AppleModel> sp_heavyApple = sequentialProcessing(list);
-        d.mostrarList(sp_heavyApple);
+        showListMod(sp_heavyApple);
         System.out.println("----------------------------- Parallel Processing -----------------------------");
         List<AppleModel> pp_heavyApple = parallelProcessing(list);
-        d.mostrarList(pp_heavyApple);
+        showListMod(pp_heavyApple);
     }
 
     public static void main(String[] args) {

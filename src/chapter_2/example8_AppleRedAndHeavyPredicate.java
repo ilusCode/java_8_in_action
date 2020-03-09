@@ -7,8 +7,7 @@ import main.model.AppleModel;
 import java.util.ArrayList;
 import java.util.List;
 
-import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.*;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 43
@@ -50,9 +49,9 @@ public class example8_AppleRedAndHeavyPredicate implements ApplePredicate {
         comentar("Capitulo 2", "Example #8", "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = creaList();
-        d.cargarDatos(list);
+        d.loadData(list);
         List<AppleModel> redAndHeavyApples = filterApples(list, new example8_AppleRedAndHeavyPredicate());
-        d.mostrarList(redAndHeavyApples);
+        showListMod(redAndHeavyApples);
     }
 
     public static void main(String[] args) {

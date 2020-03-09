@@ -43,7 +43,7 @@ public class example11_Deconstruction {
      * @return
      */
     public static List<AppleModel> useLambda(List<AppleModel> list) {
-        return filter(list, (AppleModel a) -> a.getWeight() > 15);
+        return filterMod(list, (AppleModel a) -> a.getWeight() > 15);
     }
 
     /**
@@ -54,12 +54,12 @@ public class example11_Deconstruction {
         List<AppleModel> list = new ArrayList<>();
         Predicate<AppleModel> p = appleModel -> appleModel.getWeight() > 15;
         InventoryData d = new InventoryData();
-        d.cargarDatos(list);
-        d.mostrarList(useLambda(list));
+        d.loadData(list);
+        showListMod(useLambda(list));
         comentar("", "", "");
-        d.mostrarList(usePredicate(list, p));
+        showListMod(usePredicate(list, p));
         comentar("", "", "");
-        d.mostrarList(filter(list, new Predicate<AppleModel>() {
+        showListMod(filterMod(list, new Predicate<AppleModel>() {
                     @Override
                     public boolean test(AppleModel appleModel) {
                         return appleModel.getWeight() > 10;
