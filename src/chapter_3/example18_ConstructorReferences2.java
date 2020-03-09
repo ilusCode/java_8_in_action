@@ -5,7 +5,11 @@ import main.model.AppleModel;
 
 import static main.Genericos.comentar;
 
-public class example18_ {
+/**
+ * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 86
+ * 3.6.2. Constructor references
+ */
+public class example18_ConstructorReferences2 {
 
     /**
      * Este metodo realiza la transformacion de un {@link Integer} a un objeto {@link AppleModel}, ademas, asigna
@@ -38,7 +42,11 @@ public class example18_ {
         System.out.println(am1);
     }
 
+    /**
+     * Este metodo se creo para realizar un test de uso del los metodos de esta clase
+     */
     public static void testExample18() {
+        comentar("Capitulo 3","Ejemplo 17","");
         fuction1();
         comentar("", "", "");
         fuction2();

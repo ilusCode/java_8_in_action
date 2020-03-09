@@ -8,7 +8,7 @@ import java.util.function.Supplier;
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 86
  * 3.6.2. Constructor references
  */
-public class example17ConstructorReferences {
+public class example17_ConstructorReferences {
 
     /**
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase

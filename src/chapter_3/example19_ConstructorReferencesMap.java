@@ -6,9 +6,14 @@ import main.model.AppleModel;
 import java.util.Arrays;
 import java.util.List;
 
+import static main.Genericos.comentar;
 import static main.Genericos.creaList;
 
-public class exmaple19_ConstructorReferencesMap {
+/**
+ * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 87
+ * 3.6.2. Constructor references
+ */
+public class example19_ConstructorReferencesMap {
 
     /**
      * este metodo no se le especifica a que variable se le va asignar lo que regrese del map,
@@ -51,6 +56,7 @@ public class exmaple19_ConstructorReferencesMap {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample19() {
+        comentar("Capitulo 3", "Ejemplo 19", "");
         List<Integer> listInt = Arrays.asList(1, 2, 3, 4, 5, 6, 9);
 
         for (AppleModel a : sinAsignacion(listInt)) {
