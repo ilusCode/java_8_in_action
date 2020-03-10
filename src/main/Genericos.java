@@ -4,6 +4,7 @@ import main.interfaces.funcionales.BufferedReaderProcessor;
 import main.interfaces.funcionales.Consumer;
 import main.interfaces.funcionales.Function;
 import main.model.AppleModel;
+import main.model.DishModel;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class Genericos {
+    public static List<DishModel> menu = createList();
 
     /**
      * Se crean los contructores privados derivado a una recomendacion de Sonar
@@ -29,7 +31,7 @@ public class Genericos {
      * @return
      */
     public static <T> List<T> filterMod(List<T> list, main.interfaces.funcionales.Predicate<T> p) {
-        List<T> res = creaList();
+        List<T> res = createList();
         for (T e : list) {
             if (p.test(e)) {
                 res.add(e);
@@ -47,7 +49,7 @@ public class Genericos {
      * @return
      */
     public static <T> List<T> filterGen(List<T> list, Predicate<T> p) {
-        List<T> res = creaList();
+        List<T> res = createList();
         for (T e : list) {
             if (p.test(e)) {
                 res.add(e);
@@ -62,7 +64,7 @@ public class Genericos {
      * @return regresa una lista con el tipo de modelo asignado
      */
 
-    public static <T> List<T> creaList() {
+    public static <T> List<T> createList() {
         return new ArrayList<>();
     }
 

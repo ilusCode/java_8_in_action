@@ -55,7 +55,7 @@ public class example5_AppleGreenColorPredicate implements ApplePredicate {
     public static void testExample5() {
         comentar("Capitulo 2", "Example #5", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         example5_AppleGreenColorPredicate e5 = new example5_AppleGreenColorPredicate();
         Predicate<AppleModel> p = e5::test;

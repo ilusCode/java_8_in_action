@@ -97,7 +97,7 @@ public class example3_Filter {
     public static void testExample3() {
         comentar("Capitulo 1", "Example #3", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> inv = creaList();
+        List<AppleModel> inv = createList();
         d.loadData(inv);
         List<AppleModel> filterGreen = filterApplesGreen(inv);
         showListMod(filterGreen);

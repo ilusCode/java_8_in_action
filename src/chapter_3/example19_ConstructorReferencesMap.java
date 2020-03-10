@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.createList;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 87
@@ -45,7 +45,7 @@ public class example19_ConstructorReferencesMap {
      * @return
      */
     public static List<AppleModel> map(List<Integer> li, Function<Integer, AppleModel> f) {
-        List<AppleModel> res = creaList();
+        List<AppleModel> res = createList();
         for (Integer i : li) {
             res.add(f.apply(i));
         }

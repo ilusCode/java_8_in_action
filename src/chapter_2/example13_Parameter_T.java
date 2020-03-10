@@ -26,7 +26,7 @@ public class example13_Parameter_T {
     public static void testExample13() {
         comentar("Capitulo 2", "Example #13", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         System.out.println("-------------------------- RedApples --------------------------");
         List<AppleModel> redApples = filterMod(list, (AppleModel am) -> "Roja".equals(am.getColor()));

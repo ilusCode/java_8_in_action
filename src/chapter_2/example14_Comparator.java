@@ -25,7 +25,7 @@ public class example14_Comparator {
     public static void testExample14() {
         comentar("Capitulo 2", "Example #14", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         System.out.println("----------------------------- Normal -----------------------------");
         list.sort(new Comparator<AppleModel>() {

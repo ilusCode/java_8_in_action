@@ -72,7 +72,7 @@ public class example8_Function {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample8() {
-        List<String> list = creaList();
+        List<String> list = createList();
         list.add("Java");
         list.add("8");
         list.add("in");

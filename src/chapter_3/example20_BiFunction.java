@@ -6,7 +6,7 @@ import main.model.AppleModel;
 import java.util.List;
 
 import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.createList;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 87
@@ -44,7 +44,7 @@ public class example20_BiFunction {
      */
     private static void testExample20() {
         comentar("Capitulo 3", "Ejemplo 20", "");
-        List<AppleModel> lsp = creaList();
+        List<AppleModel> lsp = createList();
         lsp.add(sinAsignacion(1, "plata"));
         lsp.add(sinAsignacion(6, "Oro"));
         lsp.add(sinAsignacion(176, "Verde"));
@@ -52,7 +52,7 @@ public class example20_BiFunction {
             System.out.println(a.getWeight() + " - " + a.getColor());
         }
         comentar("", "", "");
-        List<AppleModel> lap = creaList();
+        List<AppleModel> lap = createList();
         lap.add(asignacionParametrizado(12, "Rosa"));
         lap.add(asignacionParametrizado(1212, "Amarillo"));
         lap.add(asignacionParametrizado(13243, "Cafe"));

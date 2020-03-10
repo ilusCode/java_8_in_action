@@ -55,7 +55,7 @@ public class example6_AppleHeavyWeightPredicate implements ApplePredicate {
     public static void testExample6() {
         comentar("Capitulo 2", "Example #6", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         example6_AppleHeavyWeightPredicate e6 = new example6_AppleHeavyWeightPredicate();
         Predicate<AppleModel> p = e6::test;

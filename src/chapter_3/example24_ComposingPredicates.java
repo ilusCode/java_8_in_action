@@ -22,7 +22,7 @@ public class example24_ComposingPredicates {
      */
     private static void testExample24() {
         comentar("Capitulo 3", "Ejemplo #24", "");
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         InventoryData d = new InventoryData();
         d.loadData(list);
         Predicate<AppleModel> redApples = a -> "Roja".equals(a.getColor());

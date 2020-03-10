@@ -7,7 +7,7 @@ import main.model.AppleModel;
 import java.util.List;
 
 import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.createList;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 45
@@ -55,7 +55,7 @@ public class example9_PrettyPrintApple {
     public static void testExample9() {
         comentar("Capitulo 2", "Example #9", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         prettyPrintApple(list, new AppleFancyFormatter());
         prettyPrintApple(list, new AppleSimpleFormatter());

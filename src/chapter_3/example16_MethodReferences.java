@@ -23,7 +23,7 @@ public class example16_MethodReferences {
      */
     public static void testExample16() {
         comentar("Capitulo 3", "Ejemplo 16", "");
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         InventoryData d = new InventoryData();
         d.loadData(list);
         list.sort(comparing(AppleModel::getWeight));

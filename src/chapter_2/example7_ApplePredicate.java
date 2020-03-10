@@ -54,7 +54,7 @@ public class example7_ApplePredicate {
     public static void testExample7() {
         comentar("Capitulo 2", "Example #7", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         Predicate<AppleModel> p = example7_ApplePredicate::test;
         showListMod(filterWithPredicate(list, p));

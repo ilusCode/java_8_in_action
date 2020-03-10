@@ -62,7 +62,7 @@ public class example1_Sort {
     public static void testExample1() {
         comentar("Capitulo 1", "Example #1", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> x = creaList();
+        List<AppleModel> x = createList();
         d.loadData(x);
         System.out.println("Antes");
         showListMod(x);

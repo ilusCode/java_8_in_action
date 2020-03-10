@@ -44,7 +44,7 @@ public class example11_AnonymusClass {
     public static void testExamole11() {
         comentar("Capitulo 2", "Example #11", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         List<AppleModel> redApples = filterApples(list, new ApplePredicate() {
             @Override

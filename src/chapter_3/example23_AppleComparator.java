@@ -88,7 +88,7 @@ public class example23_AppleComparator {
      */
     private static void testExample23() {
         comentar("Capitulo 3", "Ejemplo 23", "");
-        List<AppleModel> x = creaList();
+        List<AppleModel> x = createList();
         InventoryData d = new InventoryData();
         d.loadData(x);
         System.out.println("Original");

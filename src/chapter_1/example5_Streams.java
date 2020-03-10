@@ -7,7 +7,7 @@ import java.util.*;
 
 import static java.util.stream.Collectors.groupingBy;
 import static main.Genericos.comentar;
-import static main.Genericos.creaList;
+import static main.Genericos.createList;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 28
@@ -64,7 +64,7 @@ public class example5_Streams {
     public static void testExample5() {
         comentar("Capitulo 1", "Example #5", "");
         TransactionsData t = new TransactionsData();
-        List<TransactionModel> transactions = creaList();
+        List<TransactionModel> transactions = createList();
         t.cargarDatos(transactions);
         t.mostrarList(transactions);
         mapeo(transactions);

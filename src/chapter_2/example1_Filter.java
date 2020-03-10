@@ -42,7 +42,7 @@ public class example1_Filter {
     public static void testExample1() {
         comentar("Capitulo 2", "Example #1", "");
         InventoryData d=new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         List<AppleModel> filterGreen = filterApplesGreen(list);
         showListMod(filterGreen);

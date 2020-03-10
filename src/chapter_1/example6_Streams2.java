@@ -46,7 +46,7 @@ public class example6_Streams2 {
     private static void testExample6() {
         comentar("Capitulo 1", "Example #6", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         showListMod(list);
         System.out.println("----------------------------- Sequential Processing -----------------------------");

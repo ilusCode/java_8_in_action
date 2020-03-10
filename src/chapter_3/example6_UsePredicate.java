@@ -18,7 +18,7 @@ public class example6_UsePredicate {
      */
     public static void testExample6() {
         comentar("Capitulo 3", "Ejemplo #6", "");
-        List<String> list = creaList();
+        List<String> list = createList();
         list.add("cadena #1");
         list.add("cadena #2");
         list.add("cadena #3");

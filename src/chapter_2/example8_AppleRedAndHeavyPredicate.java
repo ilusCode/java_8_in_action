@@ -48,7 +48,7 @@ public class example8_AppleRedAndHeavyPredicate implements ApplePredicate {
     public static void testExample8() {
         comentar("Capitulo 2", "Example #8", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         List<AppleModel> redAndHeavyApples = filterApples(list, new example8_AppleRedAndHeavyPredicate());
         showListMod(redAndHeavyApples);

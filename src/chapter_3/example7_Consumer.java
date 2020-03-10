@@ -52,7 +52,7 @@ public class example7_Consumer {
      */
     public static void testExample7() {
         comentar("Capitulo 3", "Ejemplo 7", "");
-        List<Integer> l = creaList();
+        List<Integer> l = createList();
         l.add(1);
         l.add(2);
         l.add(3);

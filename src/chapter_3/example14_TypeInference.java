@@ -47,7 +47,7 @@ public class example14_TypeInference {
      */
     private static void testExample14() {
         comentar("Capitulo 3", "Ejemplo 14", "");
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         InventoryData d = new InventoryData();
         d.loadData(list);
         showListMod(omittedParameter(list));

@@ -45,7 +45,7 @@ public class example4_FilterByColorAndWeight {
     public static void testExample4() {
         comentar("Capitulo 2", "Example #4", "");
         InventoryData d=new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         List<AppleModel> greenApple = filterApples(list, "Verde", 0, true);
         showListMod(greenApple);

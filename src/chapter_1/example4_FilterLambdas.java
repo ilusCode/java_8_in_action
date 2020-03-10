@@ -26,7 +26,7 @@ public class example4_FilterLambdas {
     public static void testExample4() {
         comentar("Capitulo 1", "Example #4", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> inv = creaList();
+        List<AppleModel> inv = createList();
         d.loadData(inv);
         System.out.println("Sentencia #1 peso menor a 15");
         showListMod(filterApples(inv, (AppleModel a) -> a.getWeight() < 15));

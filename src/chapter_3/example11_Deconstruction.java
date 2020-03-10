@@ -29,7 +29,7 @@ public class example11_Deconstruction {
      * @return
      */
     public static List<AppleModel> usePredicate(List<AppleModel> list, Predicate<AppleModel> p) {
-        List<AppleModel> r = creaList();
+        List<AppleModel> r = createList();
         for (AppleModel l : list) {
             if (p.test(l)) {
                 r.add(l);

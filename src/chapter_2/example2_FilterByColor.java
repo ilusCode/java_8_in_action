@@ -36,7 +36,7 @@ public class example2_FilterByColor {
     public static void testExample2() {
         comentar("Capitulo 2", "Example #2", "");
         InventoryData d = new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         List<AppleModel> greenApples = filterApplesByColor(list, "Verde");
         showListMod(greenApples);

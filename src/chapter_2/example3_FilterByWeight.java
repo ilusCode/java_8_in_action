@@ -36,7 +36,7 @@ public class example3_FilterByWeight {
     public static void testExample3() {
         comentar("Capitulo 2", "Example #3", "");
         InventoryData d=new InventoryData();
-        List<AppleModel> list = creaList();
+        List<AppleModel> list = createList();
         d.loadData(list);
         List<AppleModel> weightApples = filterApplesByWeight(list, 10);
         showListMod(weightApples);
