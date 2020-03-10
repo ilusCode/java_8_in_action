@@ -9,7 +9,7 @@ import static main.Genericos.comentar;
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 93
  * 3.8.3. Composing Functions
  */
-public class Example25_ComposingFunctions {
+public class example25_ComposingFunctions {
     /**
      * este metodo sirve para unir dos valores de tipo {@link Function<Integer,Integer>} en donde se ejecuta primero uno
      * y enseguida el otro con parametros en comun

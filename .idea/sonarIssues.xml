@@ -343,6 +343,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example25_ComposingFunctions.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example26_Letter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_3/example27_Integration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/chapter_3/example2_UseLambdas.java">
           <value>
             <set />
@@ -408,6 +423,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_4/example1_Streams.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/interfaces/ApplePredicate.java">
           <value>
             <set />
@@ -424,6 +444,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/confgi.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/data/DishData.java">
           <value>
             <set />
           </value>
@@ -474,6 +499,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/interfaces/Comparator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/interfaces/Dish.java">
           <value>
             <set />
           </value>
@@ -573,7 +603,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/model/DishModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/model/FruitModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/model/HumanModel.java">
           <value>
             <set />
           </value>
