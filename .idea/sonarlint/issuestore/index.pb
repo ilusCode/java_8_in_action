@@ -171,3 +171,21 @@ a
 1src/chapter_4/example1_StreamsParallelStream.java,3\f\3ff52a8fff37af5dd10467802e3830272c29ec70
 T
 $src/chapter_4/example7_Terminal.java,c\3\c313b5a16eeec3ba5fa3752d81595f87322918d6
+U
+%src/chapter_5/example1_Iteration.java,4\b\4bade055811483a05c457e9772393be4c2286d6d
+^
+.src/chapter_5/example2_FilteringPredicate.java,c\c\cc14deae025105cc7c332b4022daf26c5b312a17
+[
++src/chapter_5/example3_FilteringUnique.java,1\b\1b0ba1ebca03b751db6e945ffa091262ca3a801d
+V
+&src/chapter_5/example4_Truncating.java,c\6\c69d76c74b6d1da92fc1da450b078180107e2bfd
+U
+%src/chapter_5/example6_Filtering.java,c\a\cad957e9b15089f2359e4f3c22cdac8230a8223d
+P
+ src/chapter_5/example5_Skip.java,4\f\4f42a4b581ef5a1f8fad731bb7809a8ddc882125
+U
+%src/chapter_5/example8_StreamMap.java,9\1\9133116b99fa2e0af3b12ccae8d6746f57714134
+U
+%src/chapter_5/example7_StreamMap.java,8\3\835a1b9d2bf6f772358aa2ba5731454993133a7c
+V
+&src/chapter_5/example9_Flattening.java,e\4\e4b6cf4a1db6e68cd85684bdf9bc06d714a4b9ee

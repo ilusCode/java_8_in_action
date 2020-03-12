@@ -1,7 +1,8 @@
 
 C
+java:S1481"&Remove this unused "p" local variable.(¬µ8ΗΏ.
+C
 java:S1481"&Remove this unused "c" local variable.(½α¥ύ8ΗΏ.
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…²¨Ν
 K
 java:S1481"")Remove this unused "com3" local variable.(νΪ“«ύÿÿÿÿ8ΗΏ.
 K
@@ -9,5 +10,4 @@ java:S1481!")Remove this unused "com2" local variable.(ηΊ—ÿÿÿÿÿ8ΗΏ.
 K
 java:S1481 ")Remove this unused "com1" local variable.(ϋΨ‰ƒψÿÿÿÿ8ΗΏ.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ξω ώÿÿÿÿ
-C
-java:S1481"&Remove this unused "p" local variable.(¬µ8ΗΏ.
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…²¨Ν

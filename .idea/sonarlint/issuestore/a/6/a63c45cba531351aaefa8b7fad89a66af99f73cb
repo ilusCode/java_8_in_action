@@ -1,5 +1,5 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ξω ώÿÿÿÿ
 N
 java:S1612",Replace this lambda with a method reference.(ο€®Ωÿÿÿÿÿ8ύ›Έ±.
 b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(βεχΕ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ξω ώÿÿÿÿ

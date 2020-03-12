@@ -1,9 +1,9 @@
 
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ù˜çÀıÿÿÿÿ
 ^
 java:S1226"CIntroduce a new variable instead of reusing the parameter "hidden".(ß…Å¿øÿÿÿÿ
+^
+java:S1226"CIntroduce a new variable instead of reusing the parameter "hidden".(Ñ÷ÆÓıÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ù˜çÀıÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÑÅóùÿÿÿÿ
 C
 java:S1604"(Make this anonymous inner class a lambda(ß…Å¿øÿÿÿÿ
-^
-java:S1226"CIntroduce a new variable instead of reusing the parameter "hidden".(Ñ÷ÆÓıÿÿÿÿ

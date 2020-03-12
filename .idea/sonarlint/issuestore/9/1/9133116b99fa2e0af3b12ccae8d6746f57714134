@@ -1,0 +1,7 @@
+
+w
+java:S4276"[Refactor this code to use the more specialised Functional Interface 'ToIntFunction<String>'(ØÑéT8Œ»Öﬂå.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ïΩÉ√
+x
+java:S42761"[Refactor this code to use the more specialised Functional Interface 'ToIntFunction<String>'(±—î 8Œ»Öﬂå.
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(®áñ„

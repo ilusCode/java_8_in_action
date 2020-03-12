@@ -1,5 +1,5 @@
 
-
-java:S1192b"]Define a constant instead of duplicating this literal "----------------------------" 3 times.(þæ£ñþÿÿÿÿ8ŸÅžªŒ.
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öþª£
+
+java:S1192c"]Define a constant instead of duplicating this literal "----------------------------" 3 times.(þæ£ñþÿÿÿÿ8ŸÅžªŒ.
 n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Øþå›ÿÿÿÿÿ8³ê’ªŒ.

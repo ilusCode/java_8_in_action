@@ -1,7 +1,7 @@
 
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ξω ώÿÿÿÿ
 U
 java:S1611"3Remove the parentheses around the "color" parameter(ΦΰΦΪύÿÿÿÿ8’£έ‡‹.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ξω ώÿÿÿÿ
 N
 java:S1612",Replace this lambda with a method reference.(ΦΰΦΪύÿÿÿÿ8’£έ‡‹.
 V

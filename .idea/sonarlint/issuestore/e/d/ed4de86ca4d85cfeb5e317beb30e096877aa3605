@@ -1,5 +1,4 @@
 
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÓÁŒš
 H
 java:S14811"-Remove this unused "byWeight" local variable.(ßºÓëûÿÿÿÿ
 >
@@ -7,3 +6,4 @@ java:S1604"(Make this anonymous inner class a lambda(›‘ÔÞ
 D
 java:S14812".Remove this unused "byLambdas" local variable.(‰‰÷ï
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îùŒ þÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÓÁŒš

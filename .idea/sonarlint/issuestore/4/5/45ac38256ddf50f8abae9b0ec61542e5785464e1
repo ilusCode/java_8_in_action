@@ -1,12 +1,11 @@
 
-x
-java:S4276:"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(―Ρο8ρ”‹.
-b	java:S101
-"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„ζ¨³
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ξω ώÿÿÿÿ
+}
+java:S42761"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(±ªΥ€ωÿÿÿÿ8α‹.
 e
-java:S5361&"HReplace this call to "replaceAll()" by a call to the "replace()" method.(΅΅ϋ8”€‹.
+java:S5361("HReplace this call to "replaceAll()" by a call to the "replace()" method.(΅΅ϋ8”€‹.
 }
-java:S4276/"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(±ªΥ€ωÿÿÿÿ8α‹.
-}
-java:S4276C"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(ντÿÿÿÿÿ8εί›‹.
+java:S4276F"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(ντÿÿÿÿÿ8εί›‹.
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„ζ¨³
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ξω ώÿÿÿÿ
+x
+java:S4276<"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(―Ρο8ρ”‹.

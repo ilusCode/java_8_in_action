@@ -1,13 +1,13 @@
 
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(åØ«Ôÿÿÿÿÿ8ÜıÊ·Š.
 E
 java:S1604"(Make this anonymous inner class a lambda(¦•‘§8á®Ñ·Š.
+g	java:S112."FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8ÜıÊ·Š.
+N
+java:S1612A",Replace this lambda with a method reference.(Õö¤Ïüÿÿÿÿ8Ÿ¡ ¿Š.
+J
+java:S1481A"(Remove this unused "brP" local variable.(Õö¤Ïüÿÿÿÿ8Ÿ¡ ¿Š.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îùŒ şÿÿÿÿ
 x
 java:S1488"[Immediately return this expression instead of assigning it to the temporary variable "fbr".(¦•‘§8œ¦Ù·Š.
-g	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8ÜıÊ·Š.
 g	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8á®Ñ·Š.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îùŒ şÿÿÿÿ
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(åØ«Ôÿÿÿÿÿ8ÜıÊ·Š.
-N
-java:S1612?",Replace this lambda with a method reference.(Õö¤Ïüÿÿÿÿ8Ÿ¡ ¿Š.
-J
-java:S1481?"(Remove this unused "brP" local variable.(Õö¤Ïüÿÿÿÿ8Ÿ¡ ¿Š.
