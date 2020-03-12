@@ -2,6 +2,8 @@ package chapter_3;
 
 import java.util.function.DoubleFunction;
 
+import static main.Genericos.comentar;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 95
  * 3.9.2. Connecting to Java 8 lambdas
@@ -24,6 +26,7 @@ public class example27_Integration {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample27() {
+        comentar(3, 27, "");
         DoubleFunction<Double> f = x -> x + 10.0;
         System.out.println(integrateDoubleFunction(f, 3.0, 7.0));
     }

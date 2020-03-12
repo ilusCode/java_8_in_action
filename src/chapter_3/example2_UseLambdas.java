@@ -23,13 +23,14 @@ public class example2_UseLambdas {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample2() {
-        comentar("Capitulo 3", "Example #2", "");
+        comentar(3, 2, "");
         List<AppleModel> list = createList();
         InventoryData d = new InventoryData();
         d.loadData(list);
         List<AppleModel> lFilter = filterMod(list, (AppleModel am) -> "Verde".equals(am.getColor()));
         showListMod(lFilter);
     }
+
     public static void main(String[] args) {
         testExample2();
     }

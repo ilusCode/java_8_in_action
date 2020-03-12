@@ -47,7 +47,7 @@ public class example22_Trifunction {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample22() {
-        comentar("Capitulo 3", "Ejemplo 22", "");
+        comentar(3, 22, "");
         AppleModel a = (AppleModel) setterWithMap(1, 21, "Negro", 14);
         System.out.println(a.getWeight() + " - " + a.getColor() + " - " + a.getPiece());
     }

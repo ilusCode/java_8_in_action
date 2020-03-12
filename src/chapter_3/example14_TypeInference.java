@@ -46,7 +46,7 @@ public class example14_TypeInference {
      * En este metodo se integran distintas formas de utilizar el comprateTo
      */
     private static void testExample14() {
-        comentar("Capitulo 3", "Ejemplo 14", "");
+        comentar(3, 14, "");
         List<AppleModel> list = createList();
         InventoryData d = new InventoryData();
         d.loadData(list);

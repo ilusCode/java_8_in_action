@@ -40,7 +40,7 @@ public class example25_ComposingFunctions {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample25() {
-        comentar("Capitulo 3", "Ejemplo 25", "");
+        comentar(3, 25, "");
         Function<Integer, Integer> f = x -> x + 1;
         Function<Integer, Integer> g = x -> x * 2;
         int resAndThen = andThen(f, g).apply(10);

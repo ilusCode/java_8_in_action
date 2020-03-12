@@ -7,6 +7,7 @@ import main.model.DishModel;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
+import static main.Genericos.comentar;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 114
@@ -41,6 +42,7 @@ public class example6_Intermediate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample6() {
+        comentar(4,6,"");
         DishData dd = new DishData();
         dd.loadData(Genericos.menu);
         intermediate(Genericos.menu);

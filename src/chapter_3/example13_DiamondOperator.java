@@ -14,7 +14,7 @@ public class example13_DiamondOperator {
      * En este metodo se integran distintas formas de utilizar el comprateTo
      */
     public static void testExample13() {
-        comentar("Capitulo 3", "Ejemplo 13", "");
+        comentar(3, 13, "");
         problem();
         Runnable r = () -> {
             System.out.println("Tricky example");

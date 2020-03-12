@@ -483,6 +483,71 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example1_.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example1_Iteration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example2_FilteringPredicate.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example3_FilteringUnique.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example4_.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example4_Truncating.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example5_Skip.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example6_Filtering.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example7_StreamMap.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example8_ArbitraryObject.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example8_StreamMap.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/example9_Flattening.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/chapter_5/exmaple5_Skip.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/interfaces/ApplePredicate.java">
           <value>
             <set />
@@ -689,6 +754,16 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/Documents/eduardo/Proyectos/customers-service-develop_orquestacion/src/main/java/mx/santander/baas/customers/integration/apiclient/BaaSApiClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/eduardo/Proyectos/summary-service-develop/src/main/java/mx/santander/baas/summaryservice/integration/model/NotificationWrapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/eduardo/Proyectos/summary-service/src/main/java/mx/santander/baas/summaryservice/model/LevelEnum.java">
           <value>
             <set />
           </value>

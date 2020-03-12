@@ -34,8 +34,8 @@ public class example3_FilterByWeight {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample3() {
-        comentar("Capitulo 2", "Example #3", "");
-        InventoryData d=new InventoryData();
+        comentar(2, 3, "");
+        InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);
         List<AppleModel> weightApples = filterApplesByWeight(list, 10);

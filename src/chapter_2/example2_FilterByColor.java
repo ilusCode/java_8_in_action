@@ -34,7 +34,7 @@ public class example2_FilterByColor {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample2() {
-        comentar("Capitulo 2", "Example #2", "");
+        comentar(2, 2, "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

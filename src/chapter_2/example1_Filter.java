@@ -40,7 +40,7 @@ public class example1_Filter {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample1() {
-        comentar("Capitulo 2", "Example #1", "");
+        comentar(2, 1, "");
         InventoryData d=new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

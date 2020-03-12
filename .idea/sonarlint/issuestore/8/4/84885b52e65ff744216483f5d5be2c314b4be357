@@ -1,0 +1,9 @@
+
+
+java:S1192"_Define a constant instead of duplicating this literal "------------------------------" 5 times.(Ïíõšûÿÿÿÿ8­¥¸†Œ.
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(†˜µÿÿÿÿÿ
+I
+java:S16126",Replace this lambda with a method reference.(Æµ¬Ì8Î…•†Œ.
+J
+java:S1604$"(Make this anonymous inner class a lambda(´·Îûÿÿÿÿ8õĞÄ…Œ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îùŒ şÿÿÿÿ

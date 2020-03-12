@@ -21,7 +21,7 @@ public class example24_ComposingPredicates {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample24() {
-        comentar("Capitulo 3", "Ejemplo #24", "");
+        comentar(3, 24, "");
         List<AppleModel> list = createList();
         InventoryData d = new InventoryData();
         d.loadData(list);

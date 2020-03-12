@@ -72,17 +72,18 @@ public class example8_Function {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample8() {
+        comentar(3, 8, "");
         List<String> list = createList();
         list.add("Java");
         list.add("8");
         list.add("in");
         list.add("Action");
         showListGen(anonymusClass(list));
-        comentar("", "", "");
+        comentar(0, 0, "");
         showListGen(sinSentencia(list));
-        comentar("", "", "");
+        comentar(0, 0, "");
         showListGen(sinSentenciaLambda(list));
-        comentar("", "", "");
+        comentar(0, 0, "");
         showListGen(useLambda(list));
     }
 

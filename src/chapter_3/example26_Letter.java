@@ -3,6 +3,8 @@ package chapter_3;
 
 import java.util.function.Function;
 
+import static main.Genericos.comentar;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 95
  * Figure 3.7. A transformation pipeline using andThen
@@ -64,6 +66,7 @@ public class example26_Letter {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample26() {
+        comentar(3, 26, " ");
         Function<String, String> addHeader = example26_Letter::addHeader;
         System.out.println(example1(addHeader)
                 .apply("labda labda labda labda labda"));

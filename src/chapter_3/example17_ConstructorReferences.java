@@ -1,8 +1,11 @@
 package chapter_3;
 
+import main.Genericos;
 import main.model.AppleModel;
 
 import java.util.function.Supplier;
+
+import static main.Genericos.comentar;
 
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 86
@@ -14,6 +17,7 @@ public class example17_ConstructorReferences {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample17() {
+        comentar(3, 17, "");
         AppleModel a = useConstructor();
         a.setColor("Gris");
         a.setPiece(10);

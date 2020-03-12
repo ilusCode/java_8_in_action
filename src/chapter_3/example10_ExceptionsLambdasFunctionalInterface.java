@@ -38,6 +38,7 @@ public class example10_ExceptionsLambdasFunctionalInterface {
         };
         return fbr;
     }
+
     private static String apply(BufferedReader b) {
         try {
             return b.readLine();
@@ -49,6 +50,7 @@ public class example10_ExceptionsLambdasFunctionalInterface {
     /**
      * este metodo realiza una convercion de un {@link BufferedReader} a un {@link String}
      * reutilizando el metodo apply() extraido la clase {@link example10_ExceptionsLambdasFunctionalInterface}
+     *
      * @return
      */
     public static Function<BufferedReader, String> useLambdas() {
@@ -59,7 +61,7 @@ public class example10_ExceptionsLambdasFunctionalInterface {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample10() {
-        comentar("Capitulo 3", "Ejemplo 10", "");
+        comentar(3, 10, "");
         BufferedReaderProcessor brP = (BufferedReader br) -> br.readLine();
         System.out.println(anonymusClass());
         System.out.println(useLambdas());

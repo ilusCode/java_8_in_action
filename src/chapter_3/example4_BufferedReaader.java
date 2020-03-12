@@ -39,7 +39,7 @@ public class example4_BufferedReaader {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample4() throws IOException {
-        comentar("Capilulo 3", "Example #4", "Distinta implementacion de hilos");
+        comentar(3, 4, "Distinta implementacion de hilos");
         noparameterization();
         try {
             BufferedReader br = new BufferedReader(new FileReader("data.txt"));

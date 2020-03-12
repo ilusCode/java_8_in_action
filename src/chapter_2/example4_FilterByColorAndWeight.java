@@ -43,8 +43,8 @@ public class example4_FilterByColorAndWeight {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample4() {
-        comentar("Capitulo 2", "Example #4", "");
-        InventoryData d=new InventoryData();
+        comentar(2, 4, "");
+        InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);
         List<AppleModel> greenApple = filterApples(list, "Verde", 0, true);

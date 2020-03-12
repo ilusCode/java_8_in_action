@@ -44,7 +44,7 @@ public class example6_Streams2 {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample6() {
-        comentar("Capitulo 1", "Example #6", "");
+        comentar(1, 6, "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

@@ -20,7 +20,7 @@ public class example15_VariablesLocales {
      * variable haciendo referencia a port.
      */
     public static void testExample15() {
-        comentar("Capitulo 3", "Ejemplo 15", "");
+        comentar(3, 15, "");
         /**
          * PROBLEMA
          * int port = 1337;

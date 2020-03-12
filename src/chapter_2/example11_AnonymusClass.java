@@ -42,7 +42,7 @@ public class example11_AnonymusClass {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExamole11() {
-        comentar("Capitulo 2", "Example #11", "");
+        comentar(2, 11, "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

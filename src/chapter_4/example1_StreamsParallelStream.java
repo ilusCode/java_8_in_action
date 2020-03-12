@@ -92,6 +92,7 @@ public class example1_StreamsParallelStream {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample1() {
+        comentar(4, 1, "");
         DishData dd = new DishData();
         dd.loadData(menu);
         List<DishModel> lowCaloricDishes = lowCalories(menu, false, 400);

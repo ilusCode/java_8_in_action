@@ -24,7 +24,7 @@ public class example13_Parameter_T {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample13() {
-        comentar("Capitulo 2", "Example #13", "");
+        comentar(2, 13, "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

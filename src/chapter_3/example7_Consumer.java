@@ -51,18 +51,19 @@ public class example7_Consumer {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample7() {
-        comentar("Capitulo 3", "Ejemplo 7", "");
+        comentar(3, 7, "");
         List<Integer> l = createList();
         l.add(1);
         l.add(2);
         l.add(3);
         l.add(4);
         accept(l, useLambda(l));
-        comentar("", "", "");
+        comentar(0, 0, "");
         implementacionDirecta(l);
-        comentar("", "", "");
+        comentar(0, 0, "");
         mostrarDirectamentes(l);
     }
+
     public static void main(String[] args) {
         testExample7();
     }

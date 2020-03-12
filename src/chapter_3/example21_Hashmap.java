@@ -45,7 +45,7 @@ public class example21_Hashmap {
      * que tiene el objeto que regresa el setterWithMap
      */
     private static void testExample21() {
-        comentar("Capitulo 3","Ejemplo 21","");
+        comentar(3, 21, "");
         AppleModel f = (AppleModel) setterWithMap(1, "Gris");
         System.out.println(f.getColor());
     }

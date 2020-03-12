@@ -46,11 +46,11 @@ public class example18_ConstructorReferences2 {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample18() {
-        comentar("Capitulo 3","Ejemplo 17","");
+        comentar(3, 17, "");
         fuction1();
-        comentar("", "", "");
+        comentar(0, 0, "");
         fuction2();
-        comentar("", "", "");
+        comentar(0, 0, "");
         fuction3();
     }
 

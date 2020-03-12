@@ -40,7 +40,7 @@ public class example9_PrettyPrintApple {
     }
 
     /**
-     * @param list es un listado donde se esncuetra toda la informacion del arreglo
+     * @param list   es un listado donde se esncuetra toda la informacion del arreglo
      * @param format sirve para identificar cual es sentecia por la que se va a imprimir la informacion
      */
     public static void prettyPrintApple(List<AppleModel> list, AppleFormatter format) {
@@ -53,7 +53,7 @@ public class example9_PrettyPrintApple {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample9() {
-        comentar("Capitulo 2", "Example #9", "");
+        comentar(2, 9, "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

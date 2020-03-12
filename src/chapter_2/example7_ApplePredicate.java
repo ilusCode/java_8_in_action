@@ -52,7 +52,7 @@ public class example7_ApplePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample7() {
-        comentar("Capitulo 2", "Example #7", "");
+        comentar(2, 7, "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

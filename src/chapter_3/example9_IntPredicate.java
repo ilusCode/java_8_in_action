@@ -5,6 +5,8 @@ import main.interfaces.funcionales.IntPredicate;
 import java.util.ArrayList;
 import java.util.List;
 
+import static main.Genericos.comentar;
+
 /**
  * El ejemplo actual fue extraido del libro Java 8 in action de la pagina 73
  * Primitive specializations
@@ -39,6 +41,7 @@ public class example9_IntPredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample9() {
+        comentar(3, 9, "");
         List<Integer> list = new ArrayList<>();
         for (int i = 300; i < 400; i++) {
             list.add(i);

@@ -53,7 +53,7 @@ public class example5_AppleGreenColorPredicate implements ApplePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample5() {
-        comentar("Capitulo 2", "Example #5", "");
+        comentar(2, 5, "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

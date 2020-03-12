@@ -26,7 +26,7 @@ public class example12_SameLambda {
      * En este metodo se integran distintas formas de utilizar el comprateTo
      */
     public static void testExample12() {
-        comentar("Capitulo 3", "Ejemplo 12", "");
+        comentar(3, 12, "");
         Callable<Integer> c = () -> 42;
         PrivilegedAction<Integer> p = () -> 42;
         Comparator<AppleModel> com1 = (AppleModel a1, AppleModel a2) -> a1.getWeight().compareTo(a2.getWeight());

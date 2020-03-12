@@ -14,23 +14,13 @@ import static main.Genericos.*;
  * Listing 4.1. Collections: external iteration with a for-each loop
  */
 public class example5_Iteration {
-    public static void main(String[] args) {
-        List<String> names = createList();
-        System.out.println("-------------------------------\n"+"iteratorForEach");
-        showListGen(iteratorForEach(menu, names));
-        System.out.println("-------------------------------\n"+"iteratorBehind");
-        showListGen(iteratorBehind(menu));
-        System.out.println("-------------------------------\n"+"internalIteration");
-        showListGen(internalIteration(menu));
-    }
-
     private static List<String> internalIteration(List<DishModel> menu) {
         return menu.stream().map(DishModel::getName).collect(toList());
     }
 
     private static List<String> iteratorBehind(List<DishModel> menu) {
         Iterator<DishModel> iterator = menu.iterator();
-        List<String> d=createList();
+        List<String> d = createList();
         while (iterator.hasNext()) {
             DishModel dm = iterator.next();
             d.add(dm.getName());
@@ -45,5 +35,20 @@ public class example5_Iteration {
             names.add(dmodel.getName());
         }
         return names;
+    }
+
+    private static void testExample5() {
+        comentar(4, 5, "");
+        List<String> names = createList();
+        System.out.println("-------------------------------\n" + "iteratorForEach");
+        showListGen(iteratorForEach(menu, names));
+        System.out.println("-------------------------------\n" + "iteratorBehind");
+        showListGen(iteratorBehind(menu));
+        System.out.println("-------------------------------\n" + "internalIteration");
+        showListGen(internalIteration(menu));
+    }
+
+    public static void main(String[] args) {
+        testExample5();
     }
 }

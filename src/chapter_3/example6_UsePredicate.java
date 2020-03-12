@@ -17,7 +17,7 @@ public class example6_UsePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample6() {
-        comentar("Capitulo 3", "Ejemplo #6", "");
+        comentar(3, 6, "");
         List<String> list = createList();
         list.add("cadena #1");
         list.add("cadena #2");
@@ -28,6 +28,7 @@ public class example6_UsePredicate {
         List<String> nonEmpty = filterMod(list, validIsEmpty);
         showListGen(nonEmpty);
     }
+
     public static void main(String[] args) {
         testExample6();
     }

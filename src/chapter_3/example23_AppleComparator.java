@@ -87,7 +87,7 @@ public class example23_AppleComparator {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample23() {
-        comentar("Capitulo 3", "Ejemplo 23", "");
+        comentar(3, 23, "");
         List<AppleModel> x = createList();
         InventoryData d = new InventoryData();
         d.loadData(x);

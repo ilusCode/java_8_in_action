@@ -22,13 +22,13 @@ public class example16_MethodReferences {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample16() {
-        comentar("Capitulo 3", "Ejemplo 16", "");
+        comentar(3, 16, "");
         List<AppleModel> list = createList();
         InventoryData d = new InventoryData();
         d.loadData(list);
         list.sort(comparing(AppleModel::getWeight));
         showListMod(list);
-        comentar("", "", "");
+        comentar(0, 0, "");
         /**
          * anonumusClass
          */

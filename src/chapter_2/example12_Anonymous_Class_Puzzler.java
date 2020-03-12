@@ -37,7 +37,7 @@ public class example12_Anonymous_Class_Puzzler {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample12() {
-        comentar("Capitulo 2", "Example #12", "");
+        comentar(2, 12, "");
         example12_Anonymous_Class_Puzzler class_puzzler = new example12_Anonymous_Class_Puzzler();
         class_puzzler.doIt();
     }

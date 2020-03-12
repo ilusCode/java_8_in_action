@@ -46,7 +46,7 @@ public class example8_AppleRedAndHeavyPredicate implements ApplePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample8() {
-        comentar("Capitulo 2", "Example #8", "");
+        comentar(2, 8, "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

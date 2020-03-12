@@ -62,7 +62,7 @@ public class example5_Streams {
      */
     @Deprecated
     public static void testExample5() {
-        comentar("Capitulo 1", "Example #5", "");
+        comentar(1, 5, "");
         TransactionsData t = new TransactionsData();
         List<TransactionModel> transactions = createList();
         t.cargarDatos(transactions);

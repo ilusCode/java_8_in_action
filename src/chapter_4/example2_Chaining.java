@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import static java.util.stream.Collectors.groupingBy;
+import static main.Genericos.comentar;
 import static main.Genericos.menu;
 import static main.model.DishModel.Type.MEAT;
 import static main.model.DishModel.Type.OTHER;
@@ -56,6 +57,7 @@ public class example2_Chaining {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample2() {
+        comentar(4, 2, "");
         menu = loadData();
         Map<DishModel.Type, List<DishModel>> dishesType = menu.stream().collect(groupingBy(DishModel::getType));
         showMap(dishesType, MEAT);

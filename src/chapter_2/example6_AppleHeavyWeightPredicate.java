@@ -53,7 +53,7 @@ public class example6_AppleHeavyWeightPredicate implements ApplePredicate {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample6() {
-        comentar("Capitulo 2", "Example #6", "");
+        comentar(2, 6, "");
         InventoryData d = new InventoryData();
         List<AppleModel> list = createList();
         d.loadData(list);

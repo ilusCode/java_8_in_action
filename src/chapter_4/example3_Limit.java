@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 import static java.util.stream.Collectors.toList;
+import static main.Genericos.comentar;
 import static main.Genericos.menu;
 
 /**
@@ -30,6 +31,7 @@ public class example3_Limit {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample3() {
+        comentar(4, 3, "");
         DishData dd = new DishData();
         dd.loadData(menu);
         Predicate<DishModel> p = d -> d.getCalories() > 100;

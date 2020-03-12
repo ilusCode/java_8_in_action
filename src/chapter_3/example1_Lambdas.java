@@ -45,7 +45,7 @@ public class example1_Lambdas {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample1() {
-        comentar("Capitulo 3", "Example #1", "");
+        comentar(3, 1, "");
         Comparator<AppleModel> byWeight = comparator();
         Comparator<AppleModel> byLambdas = comparatorWithLambdas();
     }

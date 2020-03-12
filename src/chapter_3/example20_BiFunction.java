@@ -43,7 +43,7 @@ public class example20_BiFunction {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample20() {
-        comentar("Capitulo 3", "Ejemplo 20", "");
+        comentar(3, 20, "");
         List<AppleModel> lsp = createList();
         lsp.add(sinAsignacion(1, "plata"));
         lsp.add(sinAsignacion(6, "Oro"));
@@ -51,7 +51,7 @@ public class example20_BiFunction {
         for (AppleModel a : lsp) {
             System.out.println(a.getWeight() + " - " + a.getColor());
         }
-        comentar("", "", "");
+        comentar(0, 0, "");
         List<AppleModel> lap = createList();
         lap.add(asignacionParametrizado(12, "Rosa"));
         lap.add(asignacionParametrizado(1212, "Amarillo"));

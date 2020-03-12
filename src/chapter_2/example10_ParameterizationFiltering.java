@@ -59,7 +59,7 @@ public class example10_ParameterizationFiltering {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample10() {
-        comentar("Capitulo 2", "Example #10", "");
+        comentar(2, 10, "");
         List<AppleModel> list = Arrays.asList(
                 new AppleModel(12, "Gris", 12),
                 new AppleModel(132, "Azul", 121),

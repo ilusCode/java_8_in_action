@@ -60,7 +60,7 @@ public class example1_Sort {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample1() {
-        comentar("Capitulo 1", "Example #1", "");
+        comentar(1, 1, "");
         InventoryData d = new InventoryData();
         List<AppleModel> x = createList();
         d.loadData(x);

@@ -36,7 +36,7 @@ public class example5_BufferedReaader2 {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample5() throws IOException {
-        comentar("Capitulo 6", "Ejemplo #5", "");
+        comentar(6, 5, "");
         System.out.println(oneLine());
         System.out.println(twoLine());
     }

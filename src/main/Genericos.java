@@ -15,6 +15,7 @@ import java.util.function.Predicate;
 
 public class Genericos {
     public static List<DishModel> menu = createList();
+    public static List<DishModel> vegetarianDishes = createList();
 
     /**
      * Se crean los contructores privados derivado a una recomendacion de Sonar
@@ -107,20 +108,20 @@ public class Genericos {
      * este metodo sirve para identificar el ejemplo al que se le esta haciendo la pruebe
      *
      * @param chapter se refiere al capitulo del ejemplo
-     * @param title   se refiere al titulo del ejemplo
+     * @param example se refiere al titulo del ejemplo
      * @param msg     se refiere a una descripcion del ejemplo
      */
-    public static void comentar(String chapter, String title, String msg) {
-        if (!chapter.equals("")) {
-            System.out.println(chapter);
+    public static void comentar(int chapter, int example, String msg) {
+        if (chapter != 0) {
+            System.out.print("Capitulo: " + chapter + "\t");
         }
-        if (!title.equals("")) {
-            System.out.println(title);
+        if (example != 0) {
+            System.out.print("Ejemplo: " + example + "\t");
         }
         if (!msg.equals("")) {
-            System.out.println(msg);
+            System.out.print(msg + "\t");
         }
-        System.out.println("------------------------------");
+        System.out.println("\n------------------------------");
     }
 
     /**

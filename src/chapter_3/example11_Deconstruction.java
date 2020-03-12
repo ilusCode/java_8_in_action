@@ -50,15 +50,15 @@ public class example11_Deconstruction {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample11() {
-        comentar("Capitulo 3", "Ejemplo 11", "");
+        comentar(3, 11, "");
         List<AppleModel> list = new ArrayList<>();
         Predicate<AppleModel> p = appleModel -> appleModel.getWeight() > 15;
         InventoryData d = new InventoryData();
         d.loadData(list);
         showListMod(useLambda(list));
-        comentar("", "", "");
+        comentar(0, 0, "");
         showListMod(usePredicate(list, p));
-        comentar("", "", "");
+        comentar(0, 0, "");
         showListMod(filterMod(list, new Predicate<AppleModel>() {
                     @Override
                     public boolean test(AppleModel appleModel) {

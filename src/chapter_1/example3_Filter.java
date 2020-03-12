@@ -95,7 +95,7 @@ public class example3_Filter {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     public static void testExample3() {
-        comentar("Capitulo 1", "Example #3", "");
+        comentar(1, 3, "");
         InventoryData d = new InventoryData();
         List<AppleModel> inv = createList();
         d.loadData(inv);

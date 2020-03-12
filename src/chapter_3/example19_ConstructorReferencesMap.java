@@ -56,7 +56,7 @@ public class example19_ConstructorReferencesMap {
      * Este metodo se creo para realizar un test de uso del los metodos de esta clase
      */
     private static void testExample19() {
-        comentar("Capitulo 3", "Ejemplo 19", "");
+        comentar(3, 19, "");
         List<Integer> listInt = Arrays.asList(1, 2, 3, 4, 5, 6, 9);
 
         for (AppleModel a : sinAsignacion(listInt)) {
