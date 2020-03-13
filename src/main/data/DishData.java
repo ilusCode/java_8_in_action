@@ -22,7 +22,7 @@ public class DishData implements Dish {
     @Override
     public void loadData(List<DishModel> list) {
         loadListMod(list, 800, false, "pork", DishModel.Type.MEAT);
-        loadListMod(list, 700, false, "beef", DishModel.Type.MEAT);
+        loadListMod(list, 700, true, "beef", DishModel.Type.MEAT);
         loadListMod(list, 400, false, "chicken", DishModel.Type.MEAT);
         loadListMod(list, 530, true, "french fries", OTHER);
         loadListMod(list, 350, true, "rice", OTHER);

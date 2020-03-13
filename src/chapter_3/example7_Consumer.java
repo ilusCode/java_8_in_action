@@ -1,8 +1,7 @@
 package chapter_3;
 
-import main.interfaces.funcionales.Consumer;
-
 import java.util.List;
+import java.util.function.Consumer;
 
 import static main.Genericos.*;
 

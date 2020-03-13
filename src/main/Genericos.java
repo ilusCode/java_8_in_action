@@ -1,21 +1,25 @@
 package main;
 
 import main.interfaces.funcionales.BufferedReaderProcessor;
-import main.interfaces.funcionales.Consumer;
-import main.interfaces.funcionales.Function;
 import main.model.AppleModel;
+
+import java.util.function.Consumer;
+import java.util.function.Function;
+
 import main.model.DishModel;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
 public class Genericos {
     public static List<DishModel> menu = createList();
     public static List<DishModel> vegetarianDishes = createList();
+    public static List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
 
     /**
      * Se crean los contructores privados derivado a una recomendacion de Sonar
@@ -31,7 +35,7 @@ public class Genericos {
      * @param <T>  se refiere a un objeto generico
      * @return
      */
-    public static <T> List<T> filterMod(List<T> list, main.interfaces.funcionales.Predicate<T> p) {
+    public static <T> List<T> filterMod(List<T> list, Predicate<T> p) {
         List<T> res = createList();
         for (T e : list) {
             if (p.test(e)) {

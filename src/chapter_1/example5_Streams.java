@@ -1,7 +1,7 @@
 package chapter_1;
 
-import main.data.TransactionsData;
-import main.model.TransactionModel;
+import main.data.TransactionsPriceCurrencyData;
+import main.model.TransactionModelPriceCurrency;
 
 import java.util.*;
 
@@ -28,12 +28,12 @@ public class example5_Streams {
      * @deprecated c esta variable se le asigna la modena que tiene la transaccion que se esta recorriendo
      */
     @Deprecated
-    public static void mapeo(List<TransactionModel> transactions) {
-        Map<Currency, List<TransactionModel>> transactionsByCurrencies = new HashMap<>();
-        for (TransactionModel tr : transactions) {
+    public static void mapeo(List<TransactionModelPriceCurrency> transactions) {
+        Map<Currency, List<TransactionModelPriceCurrency>> transactionsByCurrencies = new HashMap<>();
+        for (TransactionModelPriceCurrency tr : transactions) {
             if (tr.getPrice() < 10) {
                 Currency c = tr.getCurrency();
-                List<TransactionModel> transactionsForCurrency = transactionsByCurrencies.get(c);
+                List<TransactionModelPriceCurrency> transactionsForCurrency = transactionsByCurrencies.get(c);
                 if (transactionsForCurrency == null) {
                     transactionsForCurrency = new ArrayList<>();
                     transactionsByCurrencies.put(c, transactionsForCurrency);
@@ -50,8 +50,8 @@ public class example5_Streams {
      * @deprecated c esta variable se le asigna la modena que tiene la transaccion que se esta recorriendo
      */
     @Deprecated
-    public static void mapeoStreams(List<TransactionModel> transactions) {
-        Map<Currency, List<TransactionModel>> transactionsByCurrencies = transactions.stream().filter((TransactionModel t) -> t.getPrice() > 15).collect(groupingBy(TransactionModel::getCurrency));
+    public static void mapeoStreams(List<TransactionModelPriceCurrency> transactions) {
+        Map<Currency, List<TransactionModelPriceCurrency>> transactionsByCurrencies = transactions.stream().filter((TransactionModelPriceCurrency t) -> t.getPrice() > 15).collect(groupingBy(TransactionModelPriceCurrency::getCurrency));
         System.out.println(transactionsByCurrencies.keySet());
     }
 
@@ -63,8 +63,8 @@ public class example5_Streams {
     @Deprecated
     public static void testExample5() {
         comentar(1, 5, "");
-        TransactionsData t = new TransactionsData();
-        List<TransactionModel> transactions = createList();
+        TransactionsPriceCurrencyData t = new TransactionsPriceCurrencyData();
+        List<TransactionModelPriceCurrency> transactions = createList();
         t.cargarDatos(transactions);
         t.mostrarList(transactions);
         mapeo(transactions);

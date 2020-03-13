@@ -1,6 +1,6 @@
 package chapter_3;
 
-import main.interfaces.funcionales.Predicate;
+import java.util.function.Predicate;
 
 import java.util.List;
 

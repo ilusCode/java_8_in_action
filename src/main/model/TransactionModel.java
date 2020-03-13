@@ -1,37 +1,49 @@
 package main.model;
 
-import java.util.Currency;
-
-/**
- * en esta clase se encuentra la estructura de TransactionModel
- */
 public class TransactionModel {
-    int price;
-    Currency currency;
 
-    public TransactionModel(int price, Currency currency) {
-        this.price = price;
-        this.currency = currency;
-    }
+    TraderModel trader;
+    int year;
+    int value;
 
     public TransactionModel() {
-        this.price = 0;
-        this.currency = Currency.getInstance("");
+        this.trader = null;
+        this.year = 0;
+        this.value = 0;
     }
 
-    public int getPrice() {
-        return price;
+    public TransactionModel(TraderModel trader, int year, int value) {
+        this.trader = trader;
+        this.year = year;
+        this.value = value;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public TraderModel getTrader() {
+        return trader;
     }
 
-    public Currency getCurrency() {
-        return currency;
+    public void setTrader(TraderModel trader) {
+        this.trader = trader;
     }
 
-    public void setCurrency(Currency currency) {
-        this.currency = currency;
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public String toString() {
+        return "{" + this.trader + ", " +
+                "year: " + this.year + ", " + "value:" + this.value + "}";
     }
 }

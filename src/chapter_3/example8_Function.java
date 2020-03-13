@@ -1,8 +1,7 @@
 package chapter_3;
 
-import main.interfaces.funcionales.Function;
-
 import java.util.List;
+import java.util.function.Function;
 
 import static main.Genericos.*;
 

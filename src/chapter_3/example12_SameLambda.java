@@ -1,9 +1,9 @@
 package chapter_3;
 
-import main.interfaces.Comparator;
 import main.model.AppleModel;
 
 import java.security.PrivilegedAction;
+import java.util.Comparator;
 import java.util.concurrent.Callable;
 import java.util.function.BiFunction;
 import java.util.function.ToIntBiFunction;

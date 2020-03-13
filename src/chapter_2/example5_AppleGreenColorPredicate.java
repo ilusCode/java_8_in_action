@@ -2,7 +2,9 @@ package chapter_2;
 
 import main.data.InventoryData;
 import main.interfaces.ApplePredicate;
-import main.interfaces.funcionales.Predicate;
+
+import java.util.function.Predicate;
+
 import main.model.AppleModel;
 
 import java.util.ArrayList;

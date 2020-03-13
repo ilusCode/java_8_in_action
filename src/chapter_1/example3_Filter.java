@@ -1,11 +1,11 @@
 package chapter_1;
 
 import main.data.InventoryData;
-import main.interfaces.funcionales.Predicate;
 import main.model.AppleModel;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 import static main.Genericos.*;
 
